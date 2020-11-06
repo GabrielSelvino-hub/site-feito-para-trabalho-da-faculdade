@@ -240,12 +240,13 @@ img {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 56em) { 
+@media screen and (max-width: 90em) { 
   .left-bar {
-    min-width: 650px;
+    min-width: 70%;
+    margin-left: 15%;
   }
   .left-bar > div {
-    min-width: 600px;
+    min-width: 70%;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -253,7 +254,7 @@ img {
 
 #logo {
   margin-left: 15%;
-  color: rgb(29, 84, 202);
+  color: rgb(71, 128, 252);
 }
 
 @media screen and (max-width: 56em) {
