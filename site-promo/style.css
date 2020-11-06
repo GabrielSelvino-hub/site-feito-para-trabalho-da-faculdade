@@ -253,6 +253,7 @@ img {
 
 #logo {
   margin-left: 15%;
+  color: rgb(29, 84, 202);
 }
 
 @media screen and (max-width: 56em) {
