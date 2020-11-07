@@ -1,0 +1,21 @@
+
+
+.c{
+	text-align: center;
+                font: Arial
+  }
+/* Abaixo Classe CSS para definir o corpo da pagina*/		  
+.c {    
+                 
+                   font-size: 30px;
+                   border-style:0px solid;
+                   margin-left: 10%;
+                   margin-right: 10%;
+                   color: black;
+                   width: 80%;
+                   text-align: center;
+                   padding-top: 0;
+                   padding-bottom: 0;
+                   background-color: white;
+
+}
