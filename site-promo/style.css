@@ -280,7 +280,7 @@ img {
     float: none;
     display: flex;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
   }
 
