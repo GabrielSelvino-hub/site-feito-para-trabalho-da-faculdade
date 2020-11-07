@@ -257,11 +257,6 @@ img {
   color: #FF6B6B;
 }
 
-@media screen and (max-width: 56em) {
-  #logo{
-    margin-left: 5%; 
-  }
-}
 
 /* FIM DA PAGINA */
 
@@ -276,4 +271,28 @@ img {
   text-align: center;
   margin-top: 5%;
   top: 100px;
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 731px) {
+  .flex {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .barra-de-pesquisa input {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .menu li a {
+    padding: 25px;
+  }
+  #logo {
+    margin-left: 25%;
+  }
 }
