@@ -1,21 +1,117 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+
+header {
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-right: 100%;
+  margin-left: 10px;
+  margin-top: 100px;
+}
+
+  /* header */
+
+.header {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 10%;
+}
+
+.menu-link:hover {
+  color:  #FF6B6B;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  padding: 30px;
+}
+
+@media screen and (max-width: 56em) {
+  .menu li a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .menu li a {
+    padding: 10px;
+    font-size: .6rem;
+  }
+}
+
+/* logo */
+
+#logo {
+  margin-left: 15%;
+  color: #FF6B6B;
+}
+
+/*sobre*/
 
 .c{
 	text-align: center;
-                font: Arial
-  }
+  font: Arial
+}
 /* Abaixo Classe CSS para definir o corpo da pagina*/		  
 .c {    
                  
-                   font-size: 30px;
-                   border-style:0px solid;
-                   margin-left: 10%;
-                   margin-right: 10%;
-                   color: black;
-                   width: 80%;
-                   text-align: center;
-                   padding-top: 0;
-                   padding-bottom: 0;
-                   background-color: white;
+  font-size: 30px;
+  border-style:0px solid;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: black;
+  width: 80%;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+}
 
+/* FIM DA PAGINA */
+
+.fim-da-pag {
+  position: relative;
+  bottom: 0;
+  background-color: black;
+  color: #FFF;
+  width: 100%;
+  height: 10rem;   
+  line-height: 10rem; 
+  text-align: center;
+  margin-top: 5%;
+  top: 100px;
 }
