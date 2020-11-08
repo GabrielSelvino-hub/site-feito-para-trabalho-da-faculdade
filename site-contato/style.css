@@ -1,44 +1,4 @@
 			
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-}
-header {
-	width: auto;
-	overflow: hidden;
-	position: relative;
-  }
-  
-  body {
-	margin-bottom: 100px;
-  }
-  
-  a {
-	text-decoration: none;
-	color: white;
-  }
-  
-  h1 {
-	text-align: center;
-	margin-right: 100%;
-	margin-left: 10px;
-	margin-top: 100px;
-  }
-
-img {
-	max-width: 100%;
-	margin-bottom: 10%;
-	margin-top: 1.1%;
-	width: 100%;
-	height: 20vh;
-	overflow: hidden;
-	position: relative;
-	transform: scale(1.25);
-	object-fit: cover;
-}
-	
 			/* Abaixo Classe CSS com a fonte da letra para toda a Página */
 			.fontetexto{
 			
@@ -58,7 +18,32 @@ img {
 				padding-top: 0px;
 				padding-bottom: 0px;
 				background-color: white;
-				}
+			}
+			
+			/* Classe para imagem do contatotopo */
+			#imgcenter {
+			  display: block;
+			  margin-left: 10%;
+			  margin-right: 10%;
+			  width: 80%;
+			  position: relative;
+			  animation-name: entrada;
+			  animation-duration: 4s;
+			}
+			/* Animação para entrada da imagem*/
+			@keyframes entrada {
+			  0%   {left:-100%; top:0px;}
+			  100%  {left:0%; top:0px;}
+			}
+			/* Animação para inverter as cores do nome Contato*/
+			#cnt {
+			  animation-name: inverter;
+			  animation-duration: 4s;
+			}
+			@keyframes inverter	{
+			  0%   {background-color:black; color: white; left:-100%; top:0px;}
+			  100%  {background-color:white; left:50%; top:0px;}
+			}
 				
 			/* Abaixo Classe CSS para o Corpo da Página */	
 			.contatocorpo {
@@ -76,81 +61,23 @@ img {
 				padding: 0;
 				color: white;
 				background-color: black;
-				width: 120px;
+				cursor: pointer;
+				width: 200px;
 				height: 50px;
-				display: block;
+				display: inline-block;
 				font-size: 14px;
 				transition: .3s;
 				float: left;
-				margin: 2%;
-			}			
+				margin: 0px;
+			}		
+			/* Quando o mouse passa por cima do botão chat online(.contatobotao) ele inverte as cores*/	
+			.contatobotao:hover {
+				background-color: white;
+				color: black;
+			}
 
-.header {
-	background: black;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px;
-
-	
-	font-size: 1.5rem;
-	font-family: Arial;
-}
-
-.menu-link:hover {
-	color:  #FF6B6B;
-	
-}
-
-.menu {
-	display: flex;
-}
-
-.menu li {
-	margin-left: 7px;
-}
-
-.menu li a {
-	padding: 30px;
-}
-
-@media screen and (max-width: 56em) {
-	.menu li a {
-		padding: 10px;
-		font-size: 1rem;
-	}
-}
-
-@media screen and (max-width: 40em) {
-	.menu li a {
-		padding: 10px;
-		font-size: .6rem;
-	}
-}
-
-#logo {
-	margin-left: 15%;
-	color: #FF6B6B;
-  }
-  
-
-/* FIM DA PAGINA */
-
-.fim-da-pag {
-	position: relative;
-	overflow: hidden;
-	bottom: 0;
-	background-color: black;
-	color: #FFF;
-	width: 100%;
-	height: 10rem;   
-	line-height: 10rem; 
-	text-align: center;
-	
-	font-size: 1.2rem;
-	font-family: Arial;
-
-	margin-top: 5%;
-	top: 100px;
-}
+			/* Abaixo Classe CSS para o botão Chat Online na Página */	
+			.aviso {
+				color: red;
+				transition: .30s;
+			}
