@@ -1,9 +1,3 @@
-		//Um pequena função em JavaScript que mostra uma mensagem quando clicar no botão enviar mensagem na página//
-	//	form.addEventListener('submit', e => {
-		//	validador();
-			//e.preventDefault();
-			
-	//	});
 	//função geral de validação //
 	function validador() {
 			//verifica se a área de texto do campo mensagem esta em branco//
