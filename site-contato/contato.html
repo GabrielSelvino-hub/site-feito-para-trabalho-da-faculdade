@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 	<head>
@@ -10,29 +11,16 @@
 	</head>
 	
 	<body>
-
-		
-	<header class="header">
-		<a href="home.html" id="logo">COMPRASBEM</a>
-		<nav>
-			<ul class="menu">
-			<li><a href="./home.html" class="menu-link">Home</a></li>
-			<li><a href="/site-sobre/sobre_nos.html" class="menu-link">Sobre</a></li>
-			<li><a href="/site-promo/promocoes.html" class="menu-link">Promoções</a></li>
-			<li><a href="./contato.html" class="menu-link">Contato</a></li>
-			</ul>
-		</nav>
-	</header>
-	
+	<!-- Uma div com classe que define toda a fonte da página! -->
 	<div class="fontetexto">
 	
-	<!-- Estrutura do Topo da página -->
-	<div class="contatotopo">
-	
-		<img src="imagens\topocontato.jpg">
-		<p> CONTATO</P>
-	
-	</div>
+	<!-- Estrutura do Topo da página com a imagem e o nome contato-->
+
+		<img src="./imagens/topocontato.jpg" id="imgcenter">
+		
+		<div id="cnt" class="contatotopo">
+			<p> CONTATO</P>	
+		</div>
 
 	<div>
 	<!-- Estrutura do Corpo da página -->
@@ -62,7 +50,8 @@
 			<h3><b>Fale Conosco</b></h3>
 			<p>Entre em contato conosco em um dos telefones ou e-mail das unidades, </br>tire suas dúvidas e nos dê sua sugestão!</p>
 			<p><b>Central de Atendimento: 0800 779-6761</b></p>
-			<p style="float:center;"><button class="contatobotao">Chat Online</button></p></br></br></br></br></br>
+			<!-- Botão do Chat -->
+			<p style="float:center;"><button class="contatobotao" style="margin-left: 30px;">Chat Online</button></p></br></br></br></br></br>
 
 		</div>
 	
@@ -72,22 +61,34 @@
 	<!-- Estrutura do Corpo2 da página, para enviar mensagem, abaixo das Unidades e do Fale Conosco -->
 		<div class="contatocorpo" style="margin-left:10%; font-size: 14px; width: 80%;">
 			<br/><br/><br/><br/>
+			
 			<h2><b>Envie nos uma mensagem:</b></h3>
 			
-			<p><b>Nome:</b> <input type="text"></p>
-			<p><b>E-mail:</b> <input type="email"></p>
-			<p><b>Celular:</b><input type="tel" placeholder="(11) 00000-0000"><br><br>
-			<p><b>Digite sua Mensagem:</b></p>
-			<textarea cols="80" rows="10" ></textarea>
-			<p><button type="button" onclick="obrigado()">Enviar Mensagem</button></p>
+			<!--<form id="form" method="POST">-->
+			
+					<p><b>Nome:</b> <input type="name" id="nome" required></p>
+					 <small class="aviso" id="nome1"></small>
+					 
+					<p><b>E-mail:</b> <input type="email" id="email" required></p>
+					 <small class="aviso" id="email1"></small>
+				
+					<p><b>Celular:</b><input type="tel" id="cel" placeholder="(11)1234-56789" required><br><br>
+					<small class="aviso" id="cel1"></small>
+					
+					<p><b>Digite sua Mensagem:</b></p>
+				
+					<textarea id="txtarea_consolidation" type="text" cols="80" rows="10"></textarea>
+				
+					<p><button class="contatobotao" id="botão" type="submit" onclick="validador()">Enviar Mensagem</button></p><br/><br/><br/><br/><br/>
+				
+			<!--</form>-->
+
 			
 		</div> 		
 	
 	</div>
 	
 	</div>
-
-	<div class="fim-da-pag">rodapé ;-;</div> 
 
 	</body>
 	
