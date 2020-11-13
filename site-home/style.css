@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+header {
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20%;
+}
+
+/* header */
+
+.header {
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 10%;
+}
+
+.menu-link:hover {
+    color:  #FF6B6B;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    padding: 30px;
+}
+
+@media screen and (max-width: 56em) {
+    .menu li a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .menu li a {
+        padding: 10px;
+        font-size: .6rem;
+    }
+}
+
+/* logo */
+
+#logo {
+    margin-left: 15%;
+    color: #FF6B6B;
+}
+
+@-webkit-keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}
+
+.caregando {
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+    -webkit-animation-duration: 1.8s;
+}
