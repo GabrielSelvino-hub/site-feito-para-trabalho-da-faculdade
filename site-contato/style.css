@@ -4,7 +4,7 @@
 			
 				font-family: Arial, Helvetica, sans-serif;
 			}
-			
+
 			/* Abaixo Classe CSS para o Topo da Página */
 			.contatotopo {
 				font-size: 60px;
@@ -23,9 +23,10 @@
 			/* Classe para imagem do contatotopo */
 			#imgcenter {
 			  display: block;
-			  margin-left: 10%;
-			  margin-right: 10%;
-			  width: 80%;
+			  margin-top: 20px;
+			  margin-left: 0%;
+			  margin-right: 0%;
+			  width: 100%;
 			  position: relative;
 			  animation-name: entrada;
 			  animation-duration: 4s;
@@ -58,16 +59,14 @@
 			
 			/* Abaixo Classe CSS para o botão Chat Online na Página */	
 			.contatobotao {
-				padding: 0;
+				padding: 20px 60px;
 				color: white;
 				background-color: black;
 				cursor: pointer;
-				width: 200px;
-				height: 50px;
 				display: inline-block;
 				font-size: 14px;
 				transition: .3s;
-				float: left;
+				float: center;
 				margin: 0px;
 			}		
 			/* Quando o mouse passa por cima do botão chat online(.contatobotao) ele inverte as cores*/	
@@ -76,8 +75,100 @@
 				color: black;
 			}
 
-			/* Abaixo Classe CSS para o botão Chat Online na Página */	
+			/* Abaixo Classe CSS para a mensagem de alerta do campos em envie nos uma mensagem */	
 			.aviso {
 				color: red;
 				transition: .30s;
 			}
+			
+
+			
+			
+/* MENU DA PÁGINA */
+
+
+header {
+	width: auto;
+	overflow: hidden;
+	position: relative;
+  }
+  
+body {
+	margin-bottom: 100px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.header {
+
+	list-style: none;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-family: Arial;
+
+	background: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+}
+
+.menu-link:hover {
+	color:  #FF6B6B;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	margin-left: 10px;
+}
+
+.menu li a {
+	padding: 30px;
+}
+
+@media screen and (max-width: 56em) {
+	.menu li a {
+		padding: 10px;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.menu li a {
+		padding: 10px;
+		font-size: .6rem;
+	}
+}
+
+#logo {
+	margin-left: 15%;
+	color: #FF6B6B;
+  }
+  
+  
+  /* FIM DA PAGINA */
+
+.fim-da-pag {
+	position: relative;
+	overflow: hidden;
+	bottom: 0;
+	background-color: black;
+	color: #FFF;
+	width: 100%;
+	height: 10rem;   
+	line-height: 10rem; 
+	text-align: center;
+	
+	font-size: 1.2rem;
+	font-family: Arial;
+
+	margin-top: 5%;
+	top: 100px;
+}
