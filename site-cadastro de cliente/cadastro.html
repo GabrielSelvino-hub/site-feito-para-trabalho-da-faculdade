@@ -7,7 +7,7 @@
     <title>Cadastro</title>
 	<!--link para a página css externa-->  
     <link rel="stylesheet" href="css/style.css">
-	
+	<script src="./js/valida-cadastro.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 	</header>
 	
 <!--CSS que engloba todo o conteúdo no Body, exceto Menu e Rodapé-->  
-    <form class="content">
+    <form id="form" method="GET" class="content">
 	
 		<!--parte para cliente ir para a pagina de cadastro-->  
 			<div class="primeira-parte"> 
@@ -45,12 +45,12 @@
 					<form>	
 							<!--Input para o e-mail-->  
 							<p style="text-align:left; margin-left: 10px;"><b>E-mail:</b></p> 
-							<input class="input1" type="email" placeholder="Ex. josedesousa@gmail.com" required><br/><br/><br/>									
+							<input class="input1" id="email" type="text" placeholder="Ex. josedesousa@email.com" required><br/><br/><br/>									
 						
 						<!--Input para a senha--> 
 						<div class="estruturaInput2">		
 							<p style="text-align:left; margin-left: 10px;"><b>Senha:</b></p>
-							<input class="input1" style="width:400px;" type="password" placeholder="" required><br/><br/><br/>
+							<input class="input1" id="senha" style="width:400px;" type="password" placeholder="" required><br/><br/><br/>
 						</div>
 						
 						<!--Input para confirmar senha--> 
@@ -101,7 +101,7 @@
 						<br/><br/>
 						<!--Botão para fazer o Login--> 
 						<button class="botao" style="margin-top: 30px; margin-bottom: 30px; width: 100%;" onclick="validador()">Cadastrar</button>
-			
+						
 				</form>	
 			</div>	
 			
