@@ -72,7 +72,7 @@ function senha(){
         auxEspecial=false;
     }
 
-    console.log("                        ->");
+    console.log(" - - - ->");
 
     if (auxMaiuscula) {
         console.log("Maiuscula - [ 1 ]");
