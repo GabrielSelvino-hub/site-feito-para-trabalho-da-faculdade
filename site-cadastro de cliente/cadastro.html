@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+	
+    <title>Cadastro</title>
+	<!--link para a página css externa-->  
+    <link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+<body>
+	<!--Menu no topo do site-->  
+	<header class="header">
+		<a href="home.html" id="logo">COMPRASBEM</a>
+		<nav>
+			<ul class="menu">
+			<li><a href="./home.html" class="menu-link">Home</a></li>
+			<li><a href="/site-sobre/sobre_nos.html" class="menu-link">Sobre</a></li>
+			<li><a href="/site-promo/promocoes.html" class="menu-link">Promoções</a></li>
+			<li><a href="./contato.html" class="menu-link">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+<!--CSS que engloba todo o conteúdo no Body, exceto Menu e Rodapé-->  
+    <div class="content">
+	
+		<!--parte para cliente ir para a pagina de cadastro-->  
+			<div class="primeira-parte"> 
+					<p style="font-size: 45px;">LOGO AQUI!</p>      				
+			</div>
+			
+			<!--parte com os inputs para cliente realizar o seu cadastro-->  
+			<div class="segunda-parte">           
+				
+				
+					
+					<h3>Preencha os campos abaixo e faça seu cadastro na ComprasBem:</h3>
+					
+				</div>
+				<!--Estrutura para os input -->  
+				<div class="estruturaCadastro">
+					<form>	
+							<!--Input para o e-mail-->  
+							<p style="text-align:left; margin-left: 10px;"><b>E-mail:</b></p> 
+							<input class="input1" type="email" placeholder="Ex. josedesousa@gmail.com" required><br/><br/><br/>									
+						
+						<!--Input para a senha--> 
+						<div class="estruturaInput2">		
+							<p style="text-align:left; margin-left: 10px;"><b>Senha:</b></p>
+							<input class="input1" style="width:400px;" type="password" placeholder="" required><br/><br/><br/>
+						</div>
+						
+						<!--Input para confirmar senha--> 
+						<div class="estruturaInput2" style="margin-left: -5%; margin-right: 5%;">	
+							<p style="text-align:left; margin-left: 10px;"><b>Digite a senha novamente:</b></p>
+							<input class="input1" style="width:400px;" type="password" placeholder="" required><br/><br/><br/><br/>
+						</div>	
+							
+							<!--Input para o NOME E SOBRENOME--> 
+							<p style="text-align:left; margin-left: 10px;"><b>Nome e Sobrenome:</b></p>
+							<input class="input1" type="text" placeholder="Ex. Maria da Silva" required><br/><br/><br/>
+						<div class="estruturaInput2">		
+							<!--Input para o CPF--> 
+							<p style="text-align:left; margin-left: 10px;"><b>CPF:</b></p>
+							<input class="input1" style="width:300px;" type="text" placeholder="Ex. 111.111.111-11" required><br/><br/><br/>
+						</div>
+						
+						<div class="estruturaInput2" style="margin-left: -15%; margin-right: 15%;">		
+							<!--Input para o SEXO-->
+							<br/>						
+							<p style="text-align:left; margin-left:0px;"><b>SEXO:</b>
+							<input class="input2" style="margin-left: 10px;" type="radio" id="male" name="gender" value="male">
+							<label for="male">Masculino</label>
+							<input class="input2" style="margin-left: 10px;" type="radio" id="female" name="gender" value="female">
+							<label for="female">Feminino</label></p>
+							<br><br>
+						</div>
+						
+						<div class="estruturaInput2">	
+							<!--Input para o DATA NASCIMENTO--> 
+							<p style="text-align:left; margin-left: 10px;"><b>Data Nascimento:</b></p>
+							<input class="input1" style="width:150px;" type="date" placeholder="Ex. 01/01/1990" required><br/><br/><br/>
+						</div>
+
+						<div class="estruturaInput2" style="margin-left: -25%; margin-right: 25%;">	
+							<!--Input para o TELEFONE https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_tel--> 
+							<p style="text-align:left; margin-left: 10px;"><b>Telefone:</b></p>
+							<input class="input1" style="width:200px;" type="tel" placeholder="Ex. (11)-12345-6789" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required><br/><br/><br/>
+						</div>
+						
+							<br><br>
+
+							<input type="checkbox" id="euaceito" name="euaceito">
+							<label for="euaceito"> Eu aceito os <a style="color:blue;" href="#">termos de uso</a> e também a <a style="color:blue;" href="#">politica de privacidade</a></label><br>
+							<input type="checkbox" id="receberofertas" name="receberofertas">
+							<label for="receberofertas"> Desejo receber ofertas por e-mail e notificações por whatsapp. </label><br>
+		
+						<br/><br/>
+						<!--Botão para fazer o Login--> 
+						<button class="botao" style="margin-top: 30px; margin-bottom: 30px; width: 100%;">Cadastrar</button>
+			
+				</form>	
+			</div>	
+			
+				<br><br><br>
+				<!--estrutura para fazer cadastro de cliente--> 
+				<p style="text-align: right;"> Já tem uma conta? </p>
+				
+				<a class="cadastre-se" style="float: right;" href="./login.html"><p style="text-align: right;">Entre Aqui!</p></a>
+				
+				<br/><br/><br/>
+				
+				
+	</div>
+	
+<!--Estrutura para o Rodapé--> 
+<div class="fim-da-pag">rodapé ;-;</div> 
+	
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+	
+    <title>Login</title>
+	<!--link para a página css externa-->  
+    <link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+<body>
+	<!--Menu no topo do site-->  
+	<header class="header">
+		<a href="home.html" id="logo">COMPRASBEM</a>
+		<nav>
+			<ul class="menu">
+			<li><a href="./home.html" class="menu-link">Home</a></li>
+			<li><a href="/site-sobre/sobre_nos.html" class="menu-link">Sobre</a></li>
+			<li><a href="/site-promo/promocoes.html" class="menu-link">Promoções</a></li>
+			<li><a href="./contato.html" class="menu-link">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+<!--CSS que engloba todo o conteúdo no Body, exceto Menu e Rodapé-->  
+    <div class="content">
+	
+		<!--parte para cliente ir para a pagina de lOGIN-->  
+			<div class="primeira-parte"> 
+					<p style="font-size: 45px;">LOGO AQUI!</p>      
+					<p style="font-size: 20px; margin-top: 20px;">Entre na sua conta Comprasbem, ou cadastre-se!</p>  					
+			</div>
+			
+			<!--parte para cliente realizar o login, se já possuir o cadastro-->  
+			<div class="segunda-parte">           
+				
+				<form>
+					
+					<h3>Acesse com seu e-mail:</h3>
+					
+				</div>
+				<!--Estrutura para os input -->  
+				<div class="estrutura">
+							<!--Input para o e-mail-->  
+							<p style="text-align:left;"><b>E-mail:</b></p> 
+							<input class="input1" type="email" placeholder="Digite seu E-mail aqui" required><br/><br/><br/><br/>										
+							
+							<!--Input para a senha--> 
+							<p style="text-align:left;"><b>Senha:</b></p>
+							<input class="input1" type="password" placeholder="Digite sua senha aqui" required>
+							<!--Link para redirecionar a outra página, caso o cliente tenha esquecido a senha--> 
+							<a style="margin-left: 1%; color:blue;" href="./senha.html"><br/><p style="text-align: right;">Esqueci minha senha</p></a>
+
+						<br/><br/>
+						<!--Botão para fazer o Login--> 
+						<button class="botao">Entrar</button>
+				</div>	
+				</form>	
+				
+				<br/><br/>
+
+				<p style="text-align: right;"> Ao entrar, automaticamente você concorda com a nossa <a style="color:blue;" href="#">política de privacidade</p></a>
+				
+				<br/><br/><br/>
+				
+				<!--estrutura para fazer cadastro de cliente--> 
+				<p> Não tem uma conta? </p>
+				
+				<a class="cadastre-se" href="./cadastro.html"><p style="text-align: right;">Cadastre-se Aqui!</p></a>
+				
+				<br/><br/><br/>
+				
+				
+	</div>
+<!--Estrutura para o Rodapé--> 
+<div class="fim-da-pag">rodapé ;-;</div> 
+	
+</body>
+</html>

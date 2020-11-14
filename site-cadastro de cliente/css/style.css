@@ -1,0 +1,215 @@
+/* definição css para os inputs */
+.input1{
+	border: 2px solid Gainsboro;
+	border-radius: 12px;
+	float: left;
+	width: 100%;
+	height: 40px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: Gainsboro;
+}
+
+::-webkit-input-placeholder { /* Para Microsoft Edge */
+  color: Gainsboro;
+}
+
+::placeholder {
+  color: Gainsboro;
+}
+
+/*------------------------------ ABAIXO CSS EXCLUSIVO PARA A PÁGINA CADASTRO ------------------------------*/
+.estruturaCadastro{
+	
+	border: 0px solid;
+	width: 100%;
+	margin-right: 0;	
+	margin-bottom: 10px;
+}
+
+.estruturaInput2{
+	
+	border: 0px solid;
+	width: 50%;
+	float: left;	
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.marginzero{
+	border: 0px solid; margin: 0; padding: 0;
+	
+}
+
+
+/*------------- ABAIXO CSS PARA As PÁGINAS LOGIN, CADASTRO e SENHA -------------*/
+/* Classe para definir toda estrutura que fica entre o Menu e o Rodapé - UTILIZADO NA PÁGINA LOGIN, CADASTRO E SENHA*/
+.content{
+    width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+} 
+/* Classe para o topo do corpo central, onde fica o Logo e uma mensagem - UTILIZADO NA PÁGINA LOGIN E CADASTRO*/
+.primeira-parte {
+	border: 0px solid;
+	text-align: center;
+    background-color: white;
+	color: black;
+	margin-top: 60px;
+	margin-bottom: 80px;
+	align-items: center;
+
+}
+/* Classe que defini a estrutura dos inputs E-mail e Senha - UTILIZADO NA PÁGINA LOGIN, CADASTRO E SENHA*/
+.estrutura{
+	
+	border: 0px solid;
+	width: 100%;
+	margin-right: 0%;	
+	display: inline-block;
+}
+
+/* Css para o Texto Acesse com seu e-mail */
+.segunda-parte{
+	text-align: center;
+    background-color: white;
+	border: 0px solid;
+	margin-bottom: 10px;
+
+}
+
+	/* Abaixo Classe CSS para o botão ENTRAR */	
+.botao {
+	padding: 0;
+	color: white;
+	background-color: black;
+	cursor: pointer;
+	width: 300px;
+	height: 50px;
+	display: inline-block;
+	font-size: 18px;
+	transition: .3s;
+	float: right;
+	margin: 0px;
+	border-radius: 12px;
+}		
+	/* Quando o mouse passa por cima do botão ENTRAR ele inverte as cores*/	
+.botao:hover {
+	background-color: white;
+	color: black;
+}
+	/* Abaixo Classe CSS para o botão CADASTRE-SE */
+.cadastre-se{
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 36px;
+
+}
+	/* Quando o mouse passa por cima do botão CADASTRE-SE ele inverte as cores*/	
+.cadastre-se:hover{
+  background-color: black;
+  color: white;
+}
+
+
+/* ABAIXO CSS DO MENU DA PÁGINA */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+header {
+	width: auto;
+	overflow: hidden;
+	position: relative;
+  }
+  
+body {
+	margin-bottom: 100px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.header {
+
+	list-style: none;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-family: Arial;
+
+	background: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+}
+
+.menu-link:hover {
+	color:  #FF6B6B;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	margin-left: 10px;
+}
+
+.menu li a {
+	padding: 30px;
+}
+
+@media screen and (max-width: 56em) {
+	.menu li a {
+		padding: 10px;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.menu li a {
+		padding: 10px;
+		font-size: .6rem;
+	}
+}
+
+#logo {
+	margin-left: 15%;
+	color: #FF6B6B;
+  }
+  
+  
+  /* ABAIXO CSS DO RODAPÉ DA PAGINA */
+
+.fim-da-pag {
+	position: relative;
+	overflow: hidden;
+	bottom: 0;
+	background-color: black;
+	color: #FFF;
+	width: 100%;
+	height: 10rem;   
+	line-height: 10rem; 
+	text-align: center;
+	
+	font-size: 1.2rem;
+	font-family: Arial;
+
+	margin-top: 5%;
+	top: 100px;
+}
