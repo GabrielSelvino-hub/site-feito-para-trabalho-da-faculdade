@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
 	<!--Menu no topo do site-->  
 	<header class="header">
 		<a href="home.html" id="logo">COMPRASBEM</a>
@@ -25,7 +26,8 @@
 	</header>
 	
 <!--CSS que engloba todo o conteúdo no Body, exceto Menu e Rodapé-->  
-    <form id="form" method="GET" class="content">
+
+    <div class="content">
 	
 		<!--parte para cliente ir para a pagina de cadastro-->  
 			<div class="primeira-parte"> 
@@ -42,83 +44,106 @@
 				</div>
 				<!--Estrutura para os input -->  
 				<div class="estruturaCadastro">
-					<form>	
+					
 							<!--Input para o e-mail-->  
 							<p style="text-align:left; margin-left: 10px;"><b>E-mail:</b></p> 
-							<input class="input1" id="email" type="text" placeholder="Ex. josedesousa@email.com" required><br/><br/><br/>									
+							<input class="input1" id="email" type="text" placeholder="Ex. josedesousa@email.com" oninput="email()"><br/><br/><br/>									
+							<div class="aviso" id="email1"></div>
 						
 						<!--Input para a senha--> 
 						<div class="estruturaInput2">		
 							<p style="text-align:left; margin-left: 10px;"><b>Senha:</b></p>
-							<input class="input1" id="senha" style="width:400px;" type="password" placeholder="" required><br/><br/><br/>
+							<input class="input1" id="senha" style="width:80%;" type="password" placeholder="" oninput="senha(), senharep()">
 						</div>
+
 						
 						<!--Input para confirmar senha--> 
 						<div class="estruturaInput2" style="margin-left: -5%; margin-right: 5%;">	
 							<p style="text-align:left; margin-left: 10px;"><b>Digite a senha novamente:</b></p>
-							<input class="input1" id="senharep" style="width:400px;" type="password" placeholder="" required><br/><br/><br/><br/>
+							<input class="input1" id="senharep" style="width:80%;" type="password" placeholder="" oninput="senharep()">
+						</div>
+						
+						<div style="width: 100%;">
+						<div class="estruturaInput2">	
+							<div class="aviso" id="maiuscula1"></div>
+							<div class="aviso" id="minuscula1"></div>
+							<div class="aviso" id="especial1"></div>
+							<div class="aviso" id="numeros1"></div>
+							<div class="aviso" id="quantidade1"></div>
+							<div class="aviso" id="senha1"></div>
 						</div>	
+						<div class="estruturaInput2">
+							<div class="aviso" id="senharep2"></div>
+						</div>	
+						</div>
 							
 							<!--Input para o NOME E SOBRENOME--> 
-							<p style="text-align:left; margin-left: 10px;"><b>Nome e Sobrenome:</b></p>
-							<input class="input1" id="nome" type="text" placeholder="Ex. Maria da Silva" required><br/><br/><br/>
+							<br><br><br><br><br><br><br><br>
+							<p style="text-align:left; margin-left: 10px; width:200%; float:left;"><b>Nome e Sobrenome:</b></p>
+							<input class="input1" id="nome" type="text" placeholder="Ex. Maria da Silva" oninput="nome()"><br/><br/><br/><br/>
+							<div class="aviso" id="nome1"></div>
+					
+						<!--Input para o CPF--> 
 						<div class="estruturaInput2">		
-							<!--Input para o CPF--> 
 							<p style="text-align:left; margin-left: 10px;"><b>CPF:</b></p>
-							<input class="input1" id="cpf" style="width:300px;" type="text" placeholder="Ex. 111.111.111-11" maxlength="14"
-							required><br/><br/><br/>
+							<input class="input1" id="cpf" style="width:65%;" type="text" placeholder="Ex. 111.111.111-11" maxlength="14" oninput="cpf()"><br/><br/><br/>
+							<div class="aviso" id="cpf1"></div>
 						</div>
-						
+
+						<!--Input para o SEXO-->						
 						<div class="estruturaInput2" style="margin-left: -15%; margin-right: 15%;">		
-							<!--Input para o SEXO-->
 							<br/>						
 							<p style="text-align:left; margin-left:0px;"><b>SEXO:</b>
-							<input class="input2" style="margin-left: 10px;" type="radio" id="male" name="gender" value="male" required>
+							<input style="margin-left: 10px;" type="radio" id="male" name="genero" oninput="sexo()">
 							<label for="male">Masculino</label>
-							<input class="input2" style="margin-left: 10px;" type="radio" id="female" name="gender" value="female">
+							<input style="margin-left: 10px;" type="radio" id="female" name="genero" oninput="sexo()">
 							<label for="female">Feminino</label></p>
+							<div class="aviso" id="sexo1"></div>
 							<br><br>
 						</div>
-						
+
+					<div style="width: 200%;"><br><br><br><br><br><br><br><br><br>
+						<!--Input para o DATA NASCIMENTO--> 						
 						<div class="estruturaInput2">	
-							<!--Input para o DATA NASCIMENTO--> 
 							<p style="text-align:left; margin-left: 10px;"><b>Data Nascimento:</b></p>
-							<input class="input1" style="width:150px;" type="date" placeholder="Ex. 01/01/1990" required><br/><br/><br/>
-						</div>
-
-						<div class="estruturaInput2" style="margin-left: -25%; margin-right: 25%;">	
-							<!--Input para o TELEFONE https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_tel--> 
-							<p style="text-align:left; margin-left: 10px;"><b>Telefone:</b></p>
-							<input class="input1" id="numero" style="width:200px;" type="tel" placeholder="Ex. (11)-12345-6789" maxlength="11" required><br/><br/><br/>
+							<input class="input1" style="width:35%; color:Gray; font-size:18px; text-align: center;" id="dnasc" type="date" placeholder="Ex. 01/01/1990" oninput="data()"><br/><br/><br/>
+							<div class="aviso" id="dnasc1"></div>
 						</div>
 						
-							<br><br>
+						<!--Input para o TELEFONE --> 
+						<div class="estruturaInput2" style="margin-left: -25%; margin-right: 25%;">	
+							<p style="text-align:left; margin-left: 10px;"><b>Telefone:</b></p>
+							<input class="input1" id="telefone" style="width:45%;" type="tel" placeholder="DDD e número sem barra ou espaço: Ex. 11123456789" maxlength="11" oninput="telefone()"><br/><br/><br/>
+							<div class="aviso" id="telefone1"></div>
+						</div>
+						
+					</div>		<br><br>
 
-							<input type="checkbox" id="euaceito" name="euaceito" required>
-							<label for="euaceito"> Eu aceito os <a style="color:blue;" href="#">termos de uso</a> e também a <a style="color:blue;" href="#">politica de privacidade</a></label><br>
-							<input type="checkbox" id="receberofertas" name="receberofertas" required>
+							<input type="checkbox" id="privac" oninput="privac()">
+							<label> Eu aceito os <a style="color:blue;" href="#">termos de uso</a> e também a <a style="color:blue;" href="#">politica de privacidade</a></label><br>
+							<div class="aviso" id="privac1"></div>
+							
+							<input type="checkbox" id="receberofertas" name="receberofertas">
 							<label for="receberofertas"> Desejo receber ofertas por e-mail e notificações por whatsapp. </label><br>
 		
 						<br/><br/>
 						<!--Botão para fazer o Login--> 
-						<button class="botao" style="margin-top: 30px; margin-bottom: 30px; width: 100%;" onclick="validador()">Cadastrar</button>
-						
-				</form>	
-			</div>	
-			
-				<br><br><br>
+						<button class="botao" type="submit" style="margin-top: 30px; margin-bottom: 30px; width: 100%;" onclick="validador()">Cadastrar</button>
+													
+				<br><br><br><br><br><br>
 				<!--estrutura para fazer cadastro de cliente--> 
 				<p style="text-align: right;"> Já tem uma conta? </p>
 				
 				<a class="cadastre-se" style="float: right;" href="./login.html"><p style="text-align: right;">Entre Aqui!</p></a>
 				
 				<br/><br/><br/>
+			</div>	
 				
-				
-	</form>
-	
+
+	</div>
+
 <!--Estrutura para o Rodapé--> 
 <div class="fim-da-pag">rodapé ;-;</div> 
-	
+		
 </body>
 </html>
