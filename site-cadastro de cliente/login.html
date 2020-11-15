@@ -7,7 +7,7 @@
     <title>Login</title>
 	<!--link para a página css externa-->  
     <link rel="stylesheet" href="css/style.css">
-	
+	<script src="./js/vl-login-senha.js"></script>
 </head>
 
 <body>
@@ -45,17 +45,17 @@
 				<div class="estrutura">
 							<!--Input para o e-mail-->  
 							<p style="text-align:left;"><b>E-mail:</b></p> 
-							<input class="input1" type="email" placeholder="Digite seu E-mail aqui" required><br/><br/><br/><br/>										
+							<input class="input1" id="email" type="email" placeholder="Digite seu E-mail aqui" required><br/><br/><br/><br/>										
 							
 							<!--Input para a senha--> 
 							<p style="text-align:left;"><b>Senha:</b></p>
-							<input class="input1" type="password" placeholder="Digite sua senha aqui" required>
+							<input class="input1" id="senha" type="password" placeholder="Digite sua senha aqui" required>
 							<!--Link para redirecionar a outra página, caso o cliente tenha esquecido a senha--> 
 							<a style="margin-left: 1%; color:blue;" href="./senha.html"><br/><p style="text-align: right;">Esqueci minha senha</p></a>
 
 						<br/><br/>
 						<!--Botão para fazer o Login--> 
-						<button class="botao">Entrar</button>
+						<button class="botao" onclick="validador()">Entrar</button>
 				</div>	
 				</form>	
 				

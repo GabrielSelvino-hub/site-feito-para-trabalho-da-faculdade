@@ -7,7 +7,7 @@
     <title>Senha</title>
 	<!--link para a página css externa-->  
     <link rel="stylesheet" href="css/style.css">
-	
+	<script src="./js/vl-login-senha.js"></script>
 </head>
 
 <body>
@@ -39,11 +39,11 @@
 				<div class="estrutura">
 							<!--Input para o e-mail-->  
 							<p style="text-align:left;"><b>Informe seu e-mail cadastrado:</b></p> 
-							<input class="input1" type="email" placeholder="Digite seu E-mail aqui" required><br/><br/><br/><br/>										
+							<input class="input1" id="email" type="email" placeholder="Digite seu E-mail aqui" required><br/><br/><br/><br/>										
 							<p>Ao clicar em recuperar, irá receber um e-mail com as instruções e o link para criar uma nova senha.</p>
 						<br/><br/>
 						<!--Botão para fazer o Login--> 
-						<button class="botao" style="width: 60%; margin-left: 20%; margin-right: 20%;">Recuperar</button>
+						<button class="botao" style="width: 60%; margin-left: 20%; margin-right: 20%;" onclick="email()">Recuperar</button>
 				</div>	
 				</form>	
 				
