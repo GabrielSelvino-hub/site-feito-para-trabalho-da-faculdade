@@ -1,9 +1,14 @@
 function validador() {
     email();
     senha();
+    senharep();
+    nome();
+    cpf();
+    numero();
 }
 
 // validador do email
+
 function email() {
     const email = document.getElementById("email");
     const emailvalue = email.value;
@@ -17,14 +22,14 @@ function email() {
     } else {
         console.log("[    ] - e-mail valido")   ;
     }
+    console.log(":----------------------------------------------------:");
 }
 
 // validador senha 
+
 function senha(){
     const senha = document.getElementById("senha");
     const senhavalue = senha.value;
-
-    
 
     const letrasMaiusculas = /[A-Z]/;
     const letrasMinusculas = /[a-z]/; 
@@ -32,7 +37,6 @@ function senha(){
     const caracteresEspeciais = /[!|@|#|$|%|^|&|*|(|)|-|_]/;
 
     console.log("quantidades de lertas na senha: "+senhavalue.length);
-
 
     var auxMaiuscula = false;
     var auxMinuscula = false;
@@ -111,5 +115,107 @@ function senha(){
     } else {
         console.log("       [senha invalida]");
     }
+
+    console.log(":----------------------------------------------------:");
 }
-//
+
+// senha repetida
+
+function senharep() {
+    const senha = document.getElementById("senha");
+    const senhavalue = senha.value;
+
+    const senharep = document.getElementById("senharep");
+    const senharepvalue = senharep.value;
+
+    if (senhavalue == senharepvalue) {
+        console.log("senha repitida valida");
+    } else {
+        console.log("senha repitida invalida");
+    }
+
+    console.log(":----------------------------------------------------:");
+}
+
+//validador do Nome
+
+function nome() {
+    const nome = document.getElementById("nome");
+    const nomevalue = nome.value;
+    const number = /[0-9]/;
+    const testnb = number.test(nomevalue);
+
+    if (nomevalue === ''){
+        console.log("NOME EM BRANCO");
+    }
+    else if (testnb == true){
+        console.log("NÂO PODE CONTER NUMERO(S) NO NOME");
+    } else {
+        console.log("NOME VALIDO");
+    }
+    console.log("valor do nome: "+nomevalue);
+
+    console.log(":----------------------------------------------------:");
+}
+
+//validador cpf
+
+function TestaCPF(strCPF) {
+    var Soma;
+    var Resto;
+    Soma = 0;
+  if (strCPF == "00000000000") return false;
+
+  for (var i=1; i<=9; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
+  Resto = (Soma * 10) % 11;
+
+    if ((Resto == 10) || (Resto == 11))  Resto = 0;
+    if (Resto != parseInt(strCPF.substring(9, 10)) ) return false;
+
+  Soma = 0;
+    for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (12 - i);
+    Resto = (Soma * 10) % 11;
+
+    if ((Resto == 10) || (Resto == 11))  Resto = 0;
+    if (Resto != parseInt(strCPF.substring(10, 11) ) ) return false;
+    return true;
+}
+
+function cpf() {
+    const cpf = document.getElementById("cpf");
+    const cpfvalue = cpf.value;
+    const cpfsemponto = cpfvalue.split('.').join('');
+    const cpfsembara = cpfsemponto.split('-').join('');
+
+    if (cpfvalue === ''){
+        console.log("CPF EM BRANCO.");
+    }
+    else if (TestaCPF(cpfsembara)) {
+        console.log("CPF VALIDO");
+    } else {
+        console.log("CPF INVALIDO");
+    }
+    
+    console.log(":----------------------------------------------------:");
+}
+
+function numero() {
+    const numero = document.getElementById("numero");
+    const numerovalue = numero.value;
+    const nsemchaves0 = numerovalue.split('(').join('');
+    const nsemchaves1 = nsemchaves0.split(')').join('');
+    const nsembara = nsemchaves1.split('-').join('');
+
+    const number = /[a-zA-Z]/;
+    const testnb = number.test(nsembara);
+
+    if (testnb == false&&nsembara.length == 11) {
+        console.log("numero valido");
+    } else if (testnb == true) {
+        console.log("não pode conter letras ")
+    } else {
+        console.log("em branco");
+    }
+
+    console.log(":----------------------------------------------------:");
+}
