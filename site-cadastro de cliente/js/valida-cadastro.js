@@ -1,165 +1,171 @@
+
 function validador() {
     email();
     senha();
     senharep();
     nome();
     cpf();
-    numero();
+    telefone();
+	sexo();
+	data();
+	privac();
+	var s1 = senha();
+	var s2 = senharep();
+	var n1 = nome();
+	var e1 = email();
+	var c1 = cpf();
+	var t1 = telefone();
+	var s3 = sexo();
+	var d1 = data();
+	var p1 = privac();
+	
+	if(s1==1&&s2==1&&n1==1&&e1==1&&c1==1&&t1==1&&s3==1&&d1==1&&p1==1){
+		alert("Muito obrigado por se cadastrar, aproveite nossas ofertas!");
+	}else{
+		alert("Não é possível cadastrar! Há campo(s) em branco, ou preenchido errado");
+	}
 }
 
 // validador do email
-
 function email() {
     const email = document.getElementById("email");
+	const email1 = document.getElementById("email1");
     const emailvalue = email.value;
-
+	var e1=0;
+	
     const filtroEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (emailvalue === "") {
-        console.log("[erro] - e-mail em branco");
+        email1.innerHTML = "❌ Campo obrigatório<br><br>";		
     } else if (!filtroEmail.test(emailvalue)) {
-        console.log("[erro] - o e-mail não é valido");
+        email1.innerHTML = "❌ O e-mail não é valido<br><br>";
     } else {
-        console.log("[    ] - e-mail valido")   ;
+        email1.innerHTML = "<div style='color: green;'>✓ Válido<br><br></div>";
+		e1=1;
     }
-    console.log(":----------------------------------------------------:");
+	return e1;
 }
 
 // validador senha 
-
 function senha(){
     const senha = document.getElementById("senha");
-    const senhavalue = senha.value;
-
+    const maiuscula1 = document.getElementById("maiuscula1");
+	const minuscula1 = document.getElementById("minuscula1");
+	const especial1 = document.getElementById("especial1");
+	const numeros1 = document.getElementById("numeros1");
+	const quantidade1 = document.getElementById("quantidade1");
+	const senha1 = document.getElementById("senha1");
+	const senhavalue = senha.value;
+	
     const letrasMaiusculas = /[A-Z]/;
     const letrasMinusculas = /[a-z]/; 
     const numeros = /[0-9]/;
-    const caracteresEspeciais = /[!|@|#|$|%|^|&|*|(|)|-|_]/;
-
-    console.log("quantidades de lertas na senha: "+senhavalue.length);
+    const caracteresEspeciais = /[!|@|#|$|'|"|%|^|&|*|(|)|-|_]/;
 
     var auxMaiuscula = false;
     var auxMinuscula = false;
     var auxNumero = false;
     var auxEspecial = false;
     var retorno = false;
-
-    console.log("maiuscula "+letrasMaiusculas.test(senhavalue));
-    console.log("Minuscula "+letrasMinusculas.test(senhavalue));
-    console.log("Numero "+numeros.test(senhavalue));
-    console.log("Especial "+caracteresEspeciais.test(senhavalue));
-    console.log(" [senha valida] "+retorno);
-
-    console.log("senha: "+senhavalue);
+	var s1=0;
 
     if(letrasMaiusculas.test(senhavalue)) {
         auxMaiuscula=true;
+		maiuscula1.innerHTML = "<div style='color: green;'>✓ Possui letra maiúscula</div>";
     } else {
         auxMaiuscula=false;
+		maiuscula1.innerHTML = "❌ Precisa ter pelo menos 1 letra maiúscula";
     }
 
     if(letrasMinusculas.test(senhavalue)){
         auxMinuscula=true;
+		minuscula1.innerHTML = "<div style='color: green;'>✓ Possui letra minúscula</div>";
     } else {
         auxMinuscula=false;
+		minuscula1.innerHTML = "❌ Precisa ter pelo menos 1 letra minúscula";
     }
 
     if(numeros.test(senhavalue)) {
         auxNumero=true;
+		numeros1.innerHTML = "<div style='color: green;'>✓ Possui número</div>";
     }  else {
         auxNumero=false;
+		numeros1.innerHTML = "❌ Precisa ter número";
     }
 
     if(caracteresEspeciais.test(senhavalue)){
         auxEspecial=true;
+		especial1.innerHTML = "<div style='color: green;'>✓ Possui caracter especial</div>";
     } else {
         auxEspecial=false;
+		especial1.innerHTML = "❌ Precisa ter caracter especial";
     }
 
     console.log(" - - - ->");
 
-    if (auxMaiuscula) {
-        console.log("Maiuscula - [ 1 ]");
-    } else {
-        console.log("Maiuscula - [ 0 ]")
-    }
-
-    if (auxMinuscula) {
-        console.log("Minuscula - [ 1 ]");
-    } else {
-        console.log("Minuscula - [ 0 ]")
-    }
-
-    if (auxNumero) {
-        console.log("Numero    - [ 1 ]");
-    } else {
-        console.log("Numero    - [ 0 ]")
-    }
-
-    if (auxEspecial) {
-        console.log("Especial  - [ 1 ]");
-    } else {
-        console.log("Especial  - [ 0 ]")
-    }
-
     if (senhavalue.length >= 6 && senhavalue.length <= 16) {
-        console.log("senha entre 6 - 16 - [ 1 ]");
         retorno = true;
+		quantidade1.innerHTML = "<div style='color: green;'>✓ Possui entre 6 a 16 caracter</div>";
     }else {
-        console.log("senha entre 6 - 16 - [ 0 ]");
         retorno = false;
+		quantidade1.innerHTML = "❌ Precisa ter entre 6 a 16 caracter";
     }
 
-    if (auxMaiuscula&&auxMinuscula&&auxNumero&&auxEspecial&&retorno) {
-        console.log("        [senha valida]");
+    if (auxMaiuscula==true&&auxMinuscula==true&&auxNumero==true&&auxEspecial==true&&retorno==true) {
+        senha1.innerHTML = "<div style='color: green;'>✓ Senha válida<br><br></div>";
+		s1 =1;
+
     } else {
-        console.log("       [senha invalida]");
+        senha1.innerHTML = "❌ Senha inválida<br><br>";
     }
-
-    console.log(":----------------------------------------------------:");
+	
+	return s1;
 }
 
-// senha repetida
-
+// senha repetida 
 function senharep() {
     const senha = document.getElementById("senha");
+	const senharep2 = document.getElementById("senharep2");
     const senhavalue = senha.value;
 
     const senharep = document.getElementById("senharep");
     const senharepvalue = senharep.value;
 
-    if (senhavalue == senharepvalue) {
-        console.log("senha repitida valida");
-    } else {
-        console.log("senha repitida invalida");
-    }
+	var s2=0;
 
-    console.log(":----------------------------------------------------:");
+    if (document.getElementById("senharep").value === '') {
+		senharep2.innerHTML = "";
+	}else if(senhavalue == senharepvalue) {
+        senharep2.innerHTML = "<div style='color: green;'>✓ Senhas iguais<br><br></div>";
+		var s2=1;
+    } else {
+        senharep2.innerHTML = "❌ As senhas estão diferentes<br><br>";
+    }
+	
+	return s2;
 }
 
 //validador do Nome
-
 function nome() {
     const nome = document.getElementById("nome");
     const nomevalue = nome.value;
     const number = /[0-9]/;
     const testnb = number.test(nomevalue);
-
-    if (nomevalue === ''){
-        console.log("NOME EM BRANCO");
+	var n1=0;
+    
+	if (nomevalue === ''){
+         nome1.innerHTML = "❌ Campo obrigatório<br><br>";
     }
     else if (testnb == true){
-        console.log("NÂO PODE CONTER NUMERO(S) NO NOME");
+        nome1.innerHTML = "❌ Não pode conter números no nome<br><br>";
     } else {
-        console.log("NOME VALIDO");
+        nome1.innerHTML = "<div style='color: green;'>✓ Nome válido<br><br></div>";
+		var n1=1;
     }
-    console.log("valor do nome: "+nomevalue);
-
-    console.log(":----------------------------------------------------:");
+	return n1;
 }
 
 //validador cpf
-
 function TestaCPF(strCPF) {
     var Soma;
     var Resto;
@@ -186,36 +192,79 @@ function cpf() {
     const cpfvalue = cpf.value;
     const cpfsemponto = cpfvalue.split('.').join('');
     const cpfsembara = cpfsemponto.split('-').join('');
-
+	var c1=0;
+	
     if (cpfvalue === ''){
-        console.log("CPF EM BRANCO.");
-    }
-    else if (TestaCPF(cpfsembara)) {
-        console.log("CPF VALIDO");
+		cpf1.innerHTML = "❌ Campo obrigatório<br><br>";
+    } else if (TestaCPF(cpfsembara)) {
+        cpf1.innerHTML = "<div style='color: green;'>✓ CPF válido<br><br></div>";
+		c1=1;
     } else {
-        console.log("CPF INVALIDO");
+		cpf1.innerHTML = "❌ CPF inválido<br><br>";
     }
-    
-    console.log(":----------------------------------------------------:");
+	return c1;
 }
 
-function numero() {
-    const numero = document.getElementById("numero");
-    const numerovalue = numero.value;
-    const nsemchaves0 = numerovalue.split('(').join('');
-    const nsemchaves1 = nsemchaves0.split(')').join('');
-    const nsembara = nsemchaves1.split('-').join('');
-
+function telefone() {
+    const telefone = document.getElementById("telefone");
+    const telefonevalue = telefone.value;
+    const telsemchaves0 = telefonevalue.split('(').join('');
+    const telsemchaves1 = telsemchaves0.split(')').join('');
+    const telsembara = telsemchaves1.split('-').join('');
+	var t1=0;
+	
     const number = /[a-zA-Z]/;
-    const testnb = number.test(nsembara);
+    const testnb = number.test(telsembara);
 
-    if (testnb == false&&nsembara.length == 11) {
-        console.log("numero valido");
+    if (testnb == false&&(telsembara.length == 11 ||telsembara.length == 10)) {
+        telefone1.innerHTML = "<div style='color: green;'>✓ Telefone válido<br><br></div>";
+		t1=1;
     } else if (testnb == true) {
-        console.log("não pode conter letras ")
+        telefone1.innerHTML = "❌ Telefone inválido<br><br>";
     } else {
-        console.log("em branco");
-    }
+        telefone1.innerHTML = "❌ Campo obrigatório<br><br>";
+    }    
+	return t1;
+}
 
-    console.log(":----------------------------------------------------:");
+function sexo(){
+	
+	var male = document.getElementById("male");
+	var female = document.getElementById("female");
+	var sex = 0;
+	
+	if(male.checked == true || female.checked == true){
+		sexo1.innerHTML = "";
+		sex = 1;
+	} else{
+		sexo1.innerHTML = "Campo obrigatório"
+	}
+	return sex;
+}
+
+function data(){
+	const dnasc = document.getElementById("dnasc").value;
+	var dat = 0;
+	if(dnasc === ''){
+		dnasc1.innerHTML = "Obrigatório - Preencha no formato Dia/Mês/Ano";
+	}else{
+		dnasc1.innerHTML = "";
+		dat=1;
+	}
+	return dat;
+}
+
+
+function privac(){
+	var privac = document.getElementById("privac");
+	var privac1 = document.getElementById("privac1");
+	var priv = 0;
+	
+	if(privac.checked == true){
+		privac1.innerHTML = "";
+		priv = 1;
+	} else{
+		privac1.innerHTML = "Campo obrigatório"
+	}
+	return priv;
 }
