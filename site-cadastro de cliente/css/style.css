@@ -19,6 +19,13 @@
   color: Gainsboro;
 }
 
+/* Abaixo Classe CSS para a mensagem de alerta do campos em envie nos uma mensagem */	
+.aviso {
+	color: red;
+	transition: .30s;
+	margin-left: 2%;
+}
+
 /*------------------------------ ABAIXO CSS EXCLUSIVO PARA A PÁGINA CADASTRO ------------------------------*/
 .estruturaCadastro{
 	
