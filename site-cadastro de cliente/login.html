@@ -36,7 +36,7 @@
 			<!--parte para cliente realizar o login, se já possuir o cadastro-->  
 			<div class="segunda-parte">           
 				
-				<form>
+				<!--<form>-->  
 					
 					<h3>Acesse com seu e-mail:</h3>
 					
@@ -45,19 +45,22 @@
 				<div class="estrutura">
 							<!--Input para o e-mail-->  
 							<p style="text-align:left;"><b>E-mail:</b></p> 
-							<input class="input1" id="email" type="email" placeholder="Digite seu E-mail aqui" required><br/><br/><br/><br/>										
+							<input class="input1" id="email" type="email" placeholder="Digite seu E-mail aqui" oninput="email()"><br/><br/><br/><br/>										
+							<div class="aviso" id="email1" style="margin-top:-3%;"></div><br>
 							
 							<!--Input para a senha--> 
 							<p style="text-align:left;"><b>Senha:</b></p>
-							<input class="input1" id="senha" type="password" placeholder="Digite sua senha aqui" required>
+							<input class="input1" id="senha" type="password" placeholder="Digite sua senha aqui" oninput="senha()"><br>
+							<div class="aviso" id="senha1" style="margin-top:-3%;"></div><br>
+							
 							<!--Link para redirecionar a outra página, caso o cliente tenha esquecido a senha--> 
-							<a style="margin-left: 1%; color:blue;" href="./senha.html"><br/><p style="text-align: right;">Esqueci minha senha</p></a>
+							<p style="text-align: right;"><a style="margin-left: 1%; color:blue;" href="./senha.html"><br/>Esqueci minha senha</a></p>
 
 						<br/><br/>
 						<!--Botão para fazer o Login--> 
 						<button class="botao" onclick="validador()">Entrar</button>
 				</div>	
-				</form>	
+				<!--</form>--> 	
 				
 				<br/><br/>
 
