@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang= "pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Compras Bem - Area do cliente</title>
+<link rel="stylesheet" type="text/css" href="css/dados.css" />
+</head>
+<body> 
+<div class="fontetexto">
+<header class="header">
+     <a href="home.html" id="logo">Bom Mercado</a>
+     <nav>
+       <ul class="menu">
+         <li><a href="./home.html" class="menu-link">Home</a></li>
+         <li><a href="/" class="menu-link">Sobre</a></li>
+         <li><a href="./promocoes.html" class="menu-link">Promoções</a></li>
+         <li><a href="/" class="menu-link">Contato</a></li>
+       </ul>
+     </nav>
+   </header>
+<div id="centro">
+  <h2 align="center"> Minha Conta</h2>
+ <div class="menu_esquerdo">  
+<nav>
+    <ul>
+     <li><img class="meio" src="icons/wallet.svg" width="35" height="35" alt="carteira" /><a href="pedidos.html" target="_self" >Pedidos</a></li>
+    </ul>
+    <ul>
+     <li><img class="meio" src="icons/box.svg" width="35" height="45" alt="caixa" /><a href="endereco.html" target="_self">Endere&ccedilo</a></li>
+    </ul>
+    <ul>
+     <li><img class="meio" src="icons/user.svg" width="35" height="35" alt="usuario" /><a href="dados.html" target="_self">Meus Dados</a></li>
+    </ul>
+    <ul>
+     <li><img class="meio" src="icons/clipboard.svg" width="35" height="35" alt="bloquinho"><a href="duvidas.html" target="_self">Duvidas</a></li>
+    </ul> 
+  </nav>
+ </div>
+<div id="conteudo">
+ <div class="conteudo1">
+<table>
+    <tr>
+     <td><strong>Nome e Sobrenome: </strong></td>
+      <td>
+        <label><input type="text" name="nome" id="nome" />
+        </label>
+      </td>
+    </tr>
+    <tr>
+     <td><strong>Nascimento: </strong></td>
+      <td>
+        <label><input type="date" name="data"/>
+        </label>
+      </td>
+    </tr>
+    <tr>
+     <td><strong>sexo: </strong></td>
+      <td>
+        <label><input type="radio" name="radio" id="sexo" value="sex" /> FEM.
+        <label><input type="radio" name="radio" id="sexo2" value="sex" /> MASC.
+       </label>
+      </td>
+    </tr>
+    <tr>
+     <td><strong>E-mail: </strong></td>
+      <td>
+        <label><input type="email" />
+        </label>
+      </td>
+    </tr>
+    <tr>
+     <td><strong>Senha: </strong></td>
+      <td>
+        <label><input type="password" name="senha">
+        </label>
+      </td>
+    </tr>
+    <tr>
+     <td><strong>Cpf: </strong></td>
+      <td>
+        <label><input type="text" patern="^\d{3}\.\d{3}\.\d{3}\.\d{2}$" name="cpf">
+        </label>
+      </td>
+    </tr>
+    <tr>
+     <td><strong>Telefone: </strong></td>
+      <td>
+        <label><input type="tel" patern"^\(?\d{2})\d{4}{-\s}\d{4}$">
+        </label>
+      </td>
+    </tr>
+</table>
+</div>
+ <div class="conteudo2">
+   
+</div>
+ <div class="conteudo3">
+<p><a href="mudar_Dad.html" target="_self"> Alterar Dados
+   </a></p>
+ </div>
+</div>
+<hr >
+<div id="rodape">
+ <p><align="center"> Rodap&eacute Dos Dados</p>
+</div>
+</div>
+</body>
+</html>
