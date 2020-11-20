@@ -51,7 +51,7 @@ margin-top:10px;
 margin-left:10px; 
 }
 
-.conteudo3 a:link, a:visited {
+.conteudo3 button:link, button:visited {
   background-color: white;
   color: black;
   border: 2px solid green;

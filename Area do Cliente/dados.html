@@ -13,12 +13,12 @@
        <ul class="menu">
          <li><a href="./home.html" class="menu-link">Home</a></li>
          <li><a href="/" class="menu-link">Sobre</a></li>
-         <li><a href="./promocoes.html" class="menu-link">Promoções</a></li>
+         <li><a href="./promocoes.html" class="menu-link">Promoï¿½ï¿½es</a></li>
          <li><a href="/" class="menu-link">Contato</a></li>
        </ul>
      </nav>
    </header>
-<div id="centro">
+<div id="centro"> 
   <h2 align="center"> Minha Conta</h2>
  <div class="menu_esquerdo">  
 <nav>
@@ -42,7 +42,7 @@
     <tr>
      <td><strong>Nome e Sobrenome: </strong></td>
       <td>
-        <label><input type="text" name="nome" id="nome" />
+        <label><input type="text" name="nome" id="nome" required />
         </label>
       </td>
     </tr>
@@ -56,7 +56,7 @@
     <tr>
      <td><strong>sexo: </strong></td>
       <td>
-        <label><input type="radio" name="radio" id="sexo" value="sex" /> FEM.
+        <label><input type="radio" name="radio" id="sexo" value="sex" required /> FEM.
         <label><input type="radio" name="radio" id="sexo2" value="sex" /> MASC.
        </label>
       </td>
@@ -64,40 +64,38 @@
     <tr>
      <td><strong>E-mail: </strong></td>
       <td>
-        <label><input type="email" />
+        <label><input type="email" id="email" required/>
         </label>
       </td>
     </tr>
     <tr>
      <td><strong>Senha: </strong></td>
       <td>
-        <label><input type="password" name="senha">
+        <label><input type="password" name="senha" id="senha" required>
         </label>
       </td>
     </tr>
     <tr>
      <td><strong>Cpf: </strong></td>
       <td>
-        <label><input type="text" patern="^\d{3}\.\d{3}\.\d{3}\.\d{2}$" name="cpf">
+        <label><input type="text" patern="^\d{3}\.\d{3}\.\d{3}\.\d{2}$" name="cpf" id="cpf" required>
         </label>
       </td>
     </tr>
     <tr>
      <td><strong>Telefone: </strong></td>
       <td>
-        <label><input type="tel" patern"^\(?\d{2})\d{4}{-\s}\d{4}$">
+        <label><input type="tel" patern"^\(?\d{2})\d{4}{-\s}\d{4}$" required>
         </label>
       </td>
     </tr>
+    <button type="submit" onclick="validador()">Alterar Dados</button>
+    
 </table>
 </div>
  <div class="conteudo2">
    
 </div>
- <div class="conteudo3">
-<p><a href="mudar_Dad.html" target="_self"> Alterar Dados
-   </a></p>
- </div>
 </div>
 <hr >
 <div id="rodape">
