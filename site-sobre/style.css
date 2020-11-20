@@ -58,17 +58,27 @@ h1 {
   padding: 30px;
 }
 
+#menu-link-pequeno {
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 56em) {
   .menu li a {
-    padding: 10px;
-    font-size: 1rem;
+      padding: 10px;
+      font-size: 1rem;
+  }
+  #menu-link-pequeno {
+      font-size: .7rem;
   }
 }
 
 @media screen and (max-width: 40em) {
   .menu li a {
-    padding: 10px;
-    font-size: .6rem;
+      padding: 10px;
+      font-size: .6rem;
+  }
+  #menu-link-pequeno {
+      font-size: .5rem;
   }
 }
 
