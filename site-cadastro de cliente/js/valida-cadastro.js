@@ -8,7 +8,8 @@ function validador() {
     telefone();
 	sexo();
 	data();
-	privac();
+    privac();
+    
 	var s1 = senha();
 	var s2 = senharep();
 	var n1 = nome();
