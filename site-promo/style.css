@@ -271,11 +271,13 @@ img {
   }
 }
 
-#logo {
+#logo { /*coloquei a logo para teste*/
   margin-left: 15%;
+  margin-bottom: 0;
+  margin-top: 0%;
   color: #FF6B6B;
+  width: 10rem;
 }
-
 
 /* FIM DA PAGINA */
 
