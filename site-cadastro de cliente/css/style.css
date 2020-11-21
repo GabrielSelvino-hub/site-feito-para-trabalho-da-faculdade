@@ -1,3 +1,4 @@
+
 /* definição css para os inputs */
 .input1{
 	border: 2px solid Gainsboro;
@@ -5,6 +6,7 @@
 	float: left;
 	width: 100%;
 	height: 40px;
+	font-family: Arial;
 }
 
 :-ms-input-placeholder { /* Internet Explorer */
@@ -17,6 +19,7 @@
 
 ::placeholder {
   color: Gainsboro;
+  font-family: Arial;
 }
 
 /* Abaixo Classe CSS para a mensagem de alerta do campos em envie nos uma mensagem */	
@@ -24,6 +27,7 @@
 	color: red;
 	transition: .30s;
 	margin-left: 2%;
+	font-family: Arial;
 }
 
 /*------------------------------ ABAIXO CSS EXCLUSIVO PARA A PÁGINA CADASTRO ------------------------------*/
@@ -33,6 +37,7 @@
 	width: 100%;
 	margin-right: 0;	
 	margin-bottom: 10px;
+	font-family: Arial;
 }
 
 .estruturaInput2{
@@ -42,6 +47,7 @@
 	float: left;	
 	padding: 0;
 	margin-bottom: 10px;
+	font-family: Arial;
 }
 
 .marginzero{
@@ -56,16 +62,18 @@
     width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
+	font-family: Arial;
 } 
 /* Classe para o topo do corpo central, onde fica o Logo e uma mensagem - UTILIZADO NA PÁGINA LOGIN E CADASTRO*/
 .primeira-parte {
 	border: 0px solid;
 	text-align: center;
     background-color: white;
-	color: black;
-	margin-top: 60px;
-	margin-bottom: 80px;
+	color: Indigo;
+	margin-top: 30px;
+	margin-bottom: 40px;
 	align-items: center;
+	font-family: Arial;
 
 }
 /* Classe que defini a estrutura dos inputs E-mail e Senha - UTILIZADO NA PÁGINA LOGIN, CADASTRO E SENHA*/
@@ -75,6 +83,7 @@
 	width: 100%;
 	margin-right: 0%;	
 	display: inline-block;
+	font-family: Arial;
 }
 
 /* Css para o Texto Acesse com seu e-mail */
@@ -83,6 +92,7 @@
     background-color: white;
 	border: 0px solid;
 	margin-bottom: 10px;
+	font-family: Arial;
 
 }
 
@@ -90,7 +100,7 @@
 .botao {
 	padding: 0;
 	color: white;
-	background-color: black;
+	background-color: indigo;
 	cursor: pointer;
 	width: 300px;
 	height: 50px;
@@ -103,25 +113,26 @@
 }		
 	/* Quando o mouse passa por cima do botão ENTRAR ele inverte as cores*/	
 .botao:hover {
-	background-color: white;
+	background-color: #00FFFF;
 	color: black;
 }
 	/* Abaixo Classe CSS para o botão CADASTRE-SE */
 .cadastre-se{
   margin-top: 10px;
-  background-color: white;
-  color: black;
+  background-color: #00FFFF;
+  color: indigo;
   border: 2px solid black;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 36px;
+  font-family: Arial;
 
 }
 	/* Quando o mouse passa por cima do botão CADASTRE-SE ele inverte as cores*/	
 .cadastre-se:hover{
-  background-color: black;
+  background-color: indigo;
   color: white;
 }
 
@@ -154,10 +165,10 @@ a {
 
 	list-style: none;
 	text-decoration: none;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-family: Arial;
 
-	background: black;
+	background: indigo;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -166,7 +177,7 @@ a {
 }
 
 .menu-link:hover {
-	color:  #FF6B6B;
+	color:  #00FFFF;
 }
 
 .menu {
@@ -181,27 +192,17 @@ a {
 	padding: 30px;
 }
 
-#menu-link-pequeno {
-    font-size: 1rem;
-}
-
 @media screen and (max-width: 56em) {
 	.menu li a {
 		padding: 10px;
 		font-size: 1rem;
 	}
-	#menu-link-pequeno {
-        font-size: .7rem;
-    }
 }
 
 @media screen and (max-width: 40em) {
 	.menu li a {
 		padding: 10px;
 		font-size: .6rem;
-	}
-	#menu-link-pequeno {
-		font-size: .5rem;
 	}
 }
 
@@ -217,7 +218,7 @@ a {
 	position: relative;
 	overflow: hidden;
 	bottom: 0;
-	background-color: black;
+	background-color: indigo;
 	color: #FFF;
 	width: 100%;
 	height: 10rem;   
@@ -230,4 +231,3 @@ a {
 	margin-top: 5%;
 	top: 100px;
 }
-
