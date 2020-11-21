@@ -17,7 +17,7 @@ div {
 				border: 0px solid;
 				margin-left: 10%;
 				margin-right: 10%;
-				color: black;
+				color: indigo;
 				width: 80%;
 				float: top;
 				text-align: center;
@@ -47,17 +47,13 @@ div {
 			  animation-name: inverter;
 			  animation-duration: 4s;
 			}
-			/*@keyframes inverter	{
-			  0%   {background-color:black; color: white; left:-100%; top:0px;}
-			  100%  {background-color:white; left:50%; top:0px;}
-			}*/
 				
 			/* Abaixo Classe CSS para o Corpo da Página */	
 			.contatocorpo {
 				border: 0px solid;
 				margin: auto;
 				background-color: white;
-				color: black;
+				color: indigo;
 				width: 40%;
 				float: left;
 				text-align: left;
@@ -67,7 +63,7 @@ div {
 			.contatobotao {
 				padding: 20px 60px;
 				color: white;
-				background-color: black;
+				background-color: indigo;
 				cursor: pointer;
 				display: inline-block;
 				font-size: 14px;
@@ -77,8 +73,8 @@ div {
 			}		
 			/* Quando o mouse passa por cima do botão chat online(.contatobotao) ele inverte as cores*/	
 			.contatobotao:hover {
-				background-color: white;
-				color: black;
+				background-color: #00FFFF;
+				color: indigo;
 			}
 
 			/* Abaixo Classe CSS para a mensagem de alerta do campos em envie nos uma mensagem */	
@@ -87,6 +83,10 @@ div {
 				transition: .30s;
 			}
 			
+			.separatexto{
+				margin-top: 1%;
+				margin-bottom: 1%;
+			}
 
 			
 			
@@ -115,7 +115,7 @@ a {
 	font-size: 1.2rem;
 	font-family: Arial;
 
-	background: black;
+	background: indigo;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -124,7 +124,7 @@ a {
 }
 
 .menu-link:hover {
-	color:  #FF6B6B;
+	color:  #00FFFF;
 }
 
 .menu {
@@ -136,7 +136,7 @@ a {
 }
 
 .menu li a {
-	padding: 30px;
+	padding: 20px;
 }
 
 #menu-link-pequeno {
@@ -164,8 +164,10 @@ a {
 }
 
 #logo {
-	margin-left: 15%;
-	color: #FF6B6B;
+	margin-left: 10%;
+	width: 100%;
+	background-color: white;
+	display: flex;
   }
   
   
@@ -175,8 +177,8 @@ a {
 	position: relative;
 	overflow: hidden;
 	bottom: 0;
-	background-color: black;
-	color: #FFF;
+	background-color: indigo;
+	color: white;
 	width: 100%;
 	height: 10rem;   
 	line-height: 10rem; 
