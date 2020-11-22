@@ -1,4 +1,4 @@
-
+/*classe para toda a página*/
 * {
   margin: 0;
   padding: 0;
@@ -7,31 +7,30 @@
   font-size: 1.2rem;
   font-family: Arial;
 }
-
+/*classe para o header*/
 header {
   width: auto;
   overflow: hidden;
   position: relative;
 }
-
+/*classe para toda o corpo*/
 body {
   margin-bottom: 100px;
 }
-
+/*classe para toda os links da página*/
 a {
   text-decoration: none;
   color: white;
 }
-
-h1 {
-  text-align: center;
-  margin-right: 100%;
-  margin-left: 10px;
-  margin-top: 100px;
+/*classe para o texto Sobre Nós*/
+.texto{
+	padding: 25px;
+	text-align: justify;
+	color: black; 
+	font-family: Arial;
 }
 
-  /* header */
-
+  /* Classe adicional para o header */
 .header {
   background: black;
   display: flex;
@@ -41,7 +40,7 @@ h1 {
   padding: 30px;
   margin-bottom: 10%;
 }
-
+ /* Classe adicional para efeito do link*/
 .menu-link:hover {
   color:  #FF6B6B;
 }
@@ -99,6 +98,7 @@ h1 {
 .c {    
                  
   font-size: 30px;
+  font-family: arial;
   border-style:0px solid;
   margin-left: 10%;
   margin-right: 10%;
