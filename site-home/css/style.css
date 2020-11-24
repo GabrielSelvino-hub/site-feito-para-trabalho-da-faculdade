@@ -25,7 +25,6 @@ a {
 
 h1 {
     text-align: center;
-    margin-right: 100%;
     margin-left: 10px;
     margin-top: 100px;
     display: inline-block;
@@ -45,7 +44,7 @@ h1 {
 }
 
 .menu-link:hover {
-    color: white;
+    color: #00FFFF;
     text-decoration: none;
 }
 
@@ -60,6 +59,12 @@ h1 {
 .menu li a {
     padding: 30px;
     color: white;
+}
+
+#menu-link-login, 
+#menu-link-cadastro {
+    font-size: 1.8rem;
+    padding: 10px;
 }
 
 @media screen and (max-width: 56em) {

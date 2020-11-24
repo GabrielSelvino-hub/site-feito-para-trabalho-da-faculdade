@@ -4,7 +4,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: Arial;
 }
 /*classe para o header*/
@@ -13,6 +13,7 @@ header {
   overflow: hidden;
   position: relative;
 }
+
 /*classe para toda o corpo*/
 body {
   margin-bottom: 100px;
@@ -20,7 +21,6 @@ body {
 /*classe para toda os links da página*/
 a {
   text-decoration: none;
-  color: white;
 }
 /*classe para o texto Sobre Nós*/
 .texto{
@@ -32,17 +32,18 @@ a {
 
   /* Classe adicional para o header */
 .header {
-  background: black;
+  background-color: #4B0082;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  margin-bottom: 10%;
+  padding: 20px;
+  color: white;
 }
  /* Classe adicional para efeito do link*/
 .menu-link:hover {
-  color:  #FF6B6B;
+  color: #00FFFF;
+    text-decoration: none;
 }
 
 .menu {
@@ -55,10 +56,13 @@ a {
 
 .menu li a {
   padding: 30px;
+    color: white;
 }
 
-#menu-link-pequeno {
-  font-size: 1rem;
+#menu-link-login, 
+#menu-link-cadastro {
+    font-size: 1.8rem;
+    padding: 10px;
 }
 
 @media screen and (max-width: 56em) {
@@ -67,8 +71,18 @@ a {
       font-size: 1rem;
   }
   #menu-link-pequeno {
-      font-size: .7rem;
+      font-size: .6rem;
   }
+}
+
+/* logo */
+
+#logo {
+  margin-left: 10%;
+  margin-bottom: 0;
+  margin-top: 0%;
+  color: #FF6B6B;
+  width: 40rem;
 }
 
 @media screen and (max-width: 40em) {
@@ -81,12 +95,6 @@ a {
   }
 }
 
-/* logo */
-
-#logo {
-  margin-left: 15%;
-  color: #FF6B6B;
-}
 
 /*sobre*/
 
@@ -123,4 +131,19 @@ a {
   text-align: center;
   margin-top: 5%;
   top: 100px;
+}
+
+.carousel-inner {
+  margin-top: 10%;
+}
+
+/*BOTAO VOLTAR AO TOPO*/
+
+#topo
+{
+    position: fixed;
+    float: right;
+    margin: 15px;
+    bottom: 15px;
+    right: 10px;
 }
