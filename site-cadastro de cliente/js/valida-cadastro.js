@@ -9,7 +9,7 @@ function validador() {
 	sexo();
 	data();
     privac();
-    
+    addItem();
 	var s1 = senha();
 	var s2 = senharep();
 	var n1 = nome();
