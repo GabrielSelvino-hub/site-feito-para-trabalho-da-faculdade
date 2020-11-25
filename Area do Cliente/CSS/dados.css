@@ -95,6 +95,7 @@ h1 {
     color: black;
     text-align: left;
     margin-left: 5%;
+    margin-top: 5%;
 }
 
 .menu-esquerda nav ul, .menu-esquerda nav h1{
@@ -103,6 +104,10 @@ h1 {
 
 .menu-esquerda nav ul li a:hover {
     color: #00FFFF;
+}
+
+.meio{
+    margin-right: 20px;
 }
 
 .menudados
@@ -114,11 +119,20 @@ h1 {
     color: black;
     position: fixed;
     float: right;
-    margin: 10%;
-    top: 5%;
-    left: 30%;
+    top: 23%;
+    left: 40%;
     width: 30%;
     background-image: linear-gradient(to bottom right, #4b0082, white); 
+    border-radius: 5%;
+}
+
+.form1 {
+    color: black;
+    position: fixed;
+    float: right;
+    top: 23%;
+    left: 40%;
+    width:40%;
     border-radius: 5%;
 }
 
@@ -140,5 +154,5 @@ h1 {
 .inp
 {
     margin-bottom: 3%;
-    padding: 2%;
+    padding: 1%;
  }
