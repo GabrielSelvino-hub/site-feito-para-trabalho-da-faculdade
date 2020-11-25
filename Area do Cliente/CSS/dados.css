@@ -86,11 +86,11 @@ h1 {
     margin-left: 10%;
     margin-bottom: 0;
     margin-top: 0%;
-    color: #FF6B6B;
     width: 40rem;
 }
 
 /*a cima segue um padrão*/
+
 .esquerda {
     color: black;
     text-align: left;
@@ -105,6 +105,11 @@ h1 {
     color: #00FFFF;
 }
 
+.menudados
+{
+	background-color: yellow;
+	border-radius: 25%;
+}
 .form {
     color: black;
     position: fixed;
@@ -113,8 +118,27 @@ h1 {
     top: 5%;
     left: 30%;
     width: 30%;
+    background-image: linear-gradient(to bottom right, #4b0082, white); 
+    border-radius: 5%;
 }
 
-.inp{
-    margin-bottom: 3%;
+.divform
+{
+	background-color: white;
+	width: 90%;
+	margin: 5%;
 }
+
+.btnsub {
+	margin-left: 40%;
+	width: 20%;
+	margin-bottom: 2%;
+	background-color: #4b0082;
+	color: white;
+}
+
+.inp
+{
+    margin-bottom: 3%;
+    padding: 2%;
+ }
