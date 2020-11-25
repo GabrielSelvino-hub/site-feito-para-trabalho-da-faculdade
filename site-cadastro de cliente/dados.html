@@ -1,0 +1,124 @@
+<! DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/ico.png" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Compras Bem</title>
+</head>
+<body>
+<div id="voltar"><a href="#" id="topo"><img src="img/10.png"></a></div>
+    <header class="header">
+    <a href="./index.html" id="logo"><img src="img/logo.png" style="width: 55%"></a>
+    
+    <nav>
+      <ul class="menu">
+      <li class="active"><a href="./home-pag.html" class="menu-link">Home</a></li>
+      <li><a href="/site-sobre/sobre_nos.html" class="menu-link">Sobre</a></li>
+      <li><a href="/site-promo/promocoes.html" class="menu-link">Promoções</a></li>
+      <li><a href="/site-contato/contato.html" class="menu-link">Contato</a></li>
+      <li><a href="/site-cadastro de cliente/cadastro.html" class="menu-link" id="menu-link-pequeno">Login | Cadastre-se</a></li>
+      <li><a href="carrinho.html"><i class="glyphicon glyphicon-shopping-cart" style="color:white;"></i></a></li>
+      <li><a href="area_cliente.html"><i class="glyphicon glyphicon-user" style="color:white;"></i></a></li>
+
+      </ul>
+    </nav>
+      <div style="margin-top: -1%;margin-left: 55%;width: 90%"><br>
+    <input type="search" name="busca" style="width: 98%; font-size: 20;border: 25%;">
+</div>
+  </header>
+
+<div class="divbody">
+
+	<h2 style="color: indigo;" align="center"> Minha Conta</h2>
+        
+           <div class="menu_esquerdo">  
+           
+            <nav>
+              <ul>
+               <li><img class="meio" src="icons/wallet.svg" width="35" height="35" alt="carteira" /><a href="pedidos.html" target="_self" >Pedidos</a></li>
+              </ul>
+              <ul>
+               <li><img class="meio" src="icons/box.svg" width="35" height="45" alt="caixa" /><a href="endereco.html" target="_self">Endere&ccedilo</a></li>
+              </ul>
+              <ul>
+               <li><img class="meio" src="icons/user.svg" width="35" height="35" alt="usuario" /><a href="dados.html" target="_self">Meus Dados</a></li>
+              </ul>
+              <ul>
+               <li><img class="meio" src="icons/clipboard.svg" width="35" height="35" alt="bloquinho"><a href="duvidas.html" target="_self">Duvidas</a></li>
+              </ul> 
+              </nav>
+           </div>
+        
+	
+
+    <!--DIV BANNERS-->
+
+    	<div class="divbanner txtaling" style="width: 40%; margin-left: 30%; border-radius: 20px;">
+  			<div style="display: inline-grid;"><p></p></div>
+  			<div>
+  				<form name="cadastrojanis" action="php/cadastro.php" method="post"><!-- MUDEI PRA .php -->
+            <h1>Cadastro do cliente</h1>
+            <br>
+            <br>
+              <p class="nome">
+                <input style="border-radius: 10px; width: 90%; color: darkgrey; border: none; height: 5%;font-size: 16px;" type="text" name="nome" placeholder="Nome" required>
+              </p><br>
+                       
+              <p class="email">
+                <input style="border-radius: 10px; width: 90%; color: darkgrey; border: none; height: 5%;font-size: 16px;" type="email" name="email" placeholder="Email" required>
+              </p><br>
+
+              <p class="CPF">
+                <input style="border-radius: 10px; width: 90%; color: darkgrey; border: none; height: 6%;font-size: 16px;" type="text" name="CPF" placeholder="000.000.000-00" patern="^\d{3}\.\d{3}\.\d{3}\.\d{2}$" required>
+               </p><br>
+
+               <p class="data">
+                <input style="border-radius: 10px; width: 90%; color: darkgrey; border: none; height: 5%;font-size: 16px;" type="date" name="data" placeholder="00/00/0000" required>
+              </p><br>
+
+              <p class="password">
+                <input style="border-radius: 10px; width: 90%; color: darkgrey; border: none; height: 5%;font-size: 16px;" type="password" name="senha" id="senha" required>>
+              </p><br>
+
+             <p class="telefone">
+                <input style="border-radius: 10px; width: 90%; color: darkgrey; border: none; height: 5%;font-size: 16px;" type="tel" name="telefone" id="telefone" required>>
+              </p><br>
+
+              
+              <p class="enviar">
+                <input style="border-radius: 10px; width: 30%; color: black; border: none; height: 5%;font-size: 16px;" type="submit" target="_self" name="enviar" value="Enviar">
+              </p><br>
+          </form>
+  			</div>
+		</div>
+
+
+
+</div><!--divbody fim-->
+
+
+
+<footer id="footer" style="background-color:#4B0082;">
+	<div class="divfooter">  			
+  			<br>
+  			<div class="divfoot" style="float: left;width: 50%;height: 20%;background-color:#4B0082;color:white">
+  			<p style="margin-left: 5%;"><img src="img/logo.png" style="width: 40%"></p>
+  			<span style="margin-left: 5%;font-size: 10px">Todos os Direitos Reservados</span>
+  			</div>
+
+  			<div class="divfoot txtaling" style="float: right;width: 50%;background-color:#4B0082;height: 20%;color: white">
+  			<div style="width: 50%;  float: left;background-color:#4B0082;color: white"><p>Fale Conosco</p><a href="contatos.html" style="text-decoration: none;color: white">Contato</a></div>
+  			<div style="width: 50%; float: right;background-color:#4B0082;color: white">Sobre Nós</div>
+  			</div>
+	</div>
+</footer>
+
+
+</body>
+
+</html>
