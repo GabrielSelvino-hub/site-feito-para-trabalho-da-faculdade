@@ -1,3 +1,95 @@
+/* ABAIXO CSS DO MENU DA PÁGINA */
+*
+ {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: Arial;
+}
+
+header {
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+/* header */
+
+.header 
+{
+    background-color: #4B0082;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.menu-link:hover {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    padding: 30px;
+    color: white;
+}
+
+#menu-link-login, 
+#menu-link-cadastro {
+    font-size: 1.8rem;
+    padding: 10px;
+}
+
+@media screen and (max-width: 56em) {
+    .menu li a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .menu li a {
+        padding: 10px;
+        font-size: .6rem;
+    }
+}
+
+/* logo */
+
+#logo {
+    margin-left: 10%;
+    margin-bottom: 0;
+    margin-top: 0%;
+    color: #FF6B6B;
+    width: 40rem;
+}
 
 /* definição css para os inputs */
 .input1{
@@ -7,6 +99,7 @@
 	width: 100%;
 	height: 40px;
 	font-family: Arial;
+	font-size: 1rem;
 }
 
 :-ms-input-placeholder { /* Internet Explorer */
@@ -32,7 +125,6 @@
 
 /*------------------------------ ABAIXO CSS EXCLUSIVO PARA A PÁGINA CADASTRO ------------------------------*/
 .estruturaCadastro{
-	
 	border: 0px solid;
 	width: 100%;
 	margin-right: 0;	
@@ -137,80 +229,7 @@
 }
 
 
-/* ABAIXO CSS DO MENU DA PÁGINA */
 
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-}
-
-header {
-	width: auto;
-	overflow: hidden;
-	position: relative;
-  }
-  
-body {
-	margin-bottom: 100px;
-}
-
-a {
-	text-decoration: none;
-	color: white;
-}
-
-.header {
-
-	list-style: none;
-	text-decoration: none;
-	font-size: 1.2rem;
-	font-family: Arial;
-
-	background: indigo;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px;
-}
-
-.menu-link:hover {
-	color:  #00FFFF;
-}
-
-.menu {
-	display: flex;
-}
-
-.menu li {
-	margin-left: 10px;
-}
-
-.menu li a {
-	padding: 30px;
-}
-
-@media screen and (max-width: 56em) {
-	.menu li a {
-		padding: 10px;
-		font-size: 1rem;
-	}
-}
-
-@media screen and (max-width: 40em) {
-	.menu li a {
-		padding: 10px;
-		font-size: .6rem;
-	}
-}
-
-#logo {
-	margin-left: 15%;
-	color: #FF6B6B;
-  }
-  
   
   /* ABAIXO CSS DO RODAPÉ DA PAGINA */
 

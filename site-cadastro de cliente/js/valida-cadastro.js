@@ -21,9 +21,9 @@ function validador() {
 	var p1 = privac();
 	
 	if(s1==1&&s2==1&&n1==1&&e1==1&&c1==1&&t1==1&&s3==1&&d1==1&&p1==1){
-		alert("Muito obrigado por se cadastrar, aproveite nossas ofertas!");
+		console.log("Muito obrigado por se cadastrar, aproveite nossas ofertas!");
 	}else{
-		alert("Não é possível cadastrar! Há campo(s) em branco, ou preenchido errado");
+		console.log("Não é possível cadastrar! Há campo(s) em branco, ou preenchido errado");
 	}
 }
 
