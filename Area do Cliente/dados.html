@@ -4,130 +4,98 @@
 <head>
 
 	<title>Compras Bem - Area do cliente</title>
-	<link rel="stylesheet" type="text/css" href="css/pedidos.css" />
+	<link rel="stylesheet" type="text/css" href="css/dados.css" />
 
 </head>
 
-<body> 
-
-	<div class="fontetexto">
+<body>
 	
-		<header class="header">
-			 <a href="home.html" id="logo">Bom Mercado</a>
-			 <nav>
-			   <ul class="menu">
-				 <li><a href="./home.html" class="menu-link">Home</a></li>
-				 <li><a href="/" class="menu-link">Sobre</a></li>
-				 <li><a href="./promocoes.html" class="menu-link">Promoções</a></li>
-				 <li><a href="/" class="menu-link">Contato</a></li>
-			   </ul>
-			 </nav>
-		   </header>
-		   
-		<div id="centro"> 
+	<header class="header">
+		<a href="/site-home/home-pag.html" id="logo"><img src="/img/logo.png" style="width: 55%"></a>
 		
-				<h2 style="color: indigo;" align="center"> Minha Conta</h2>
-				
-					 <div class="menu_esquerdo">  
-					 
-						<nav>
-							<ul>
-							 <li><img class="meio" src="icons/wallet.svg" width="35" height="35" alt="carteira" /><a href="pedidos.html" target="_self" >Pedidos</a></li>
-							</ul>
-							<ul>
-							 <li><img class="meio" src="icons/box.svg" width="35" height="45" alt="caixa" /><a href="endereco.html" target="_self">Endere&ccedilo</a></li>
-							</ul>
-							<ul>
-							 <li><img class="meio" src="icons/user.svg" width="35" height="35" alt="usuario" /><a href="dados.html" target="_self">Meus Dados</a></li>
-							</ul>
-							<ul>
-							 <li><img class="meio" src="icons/clipboard.svg" width="35" height="35" alt="bloquinho"><a href="duvidas.html" target="_self">Duvidas</a></li>
-							</ul> 
-						  </nav>
-					 </div>
-					 
-			<div  id="conteudo">
-			
-				 <div class="conteudo1">
-				 
-					<table>
-					
-						<tr>
-						 <td><strong>Nome e Sobrenome: </strong></td>
-						  <td>
-							<label><input type="text" name="nome" id="nome" required />
-							</label>
-						  </td>
-						</tr>
-						
-						<tr>
-						 <td><strong>Nascimento: </strong></td>
-						  <td>
-							<label><input type="date" name="data"/>
-							</label>
-						  </td>
-						</tr>
-						
-						<tr>
-						 <td><strong>Sexo: </strong></td>
-						  <td>
-							<label><input type="radio" name="radio" id="sexo" value="sex" required /> FEM.
-							<label><input type="radio" name="radio" id="sexo2" value="sex" /> MASC.
-						   </label>
-						  </td>
-						</tr>
-						
-						<tr>
-						 <td><strong>E-mail: </strong></td>
-						  <td>
-							<label><input type="email" id="email" required/>
-							</label>
-						  </td>
-						</tr>
-						
-						<tr>
-						 <td><strong>Senha: </strong></td>
-						  <td>
-							<label><input type="password" name="senha" id="senha" required>
-							</label>
-						  </td>
-						</tr>
-						
-						<tr>
-						 <td><strong>Cpf: </strong></td>
-						  <td>
-							<label><input type="text" patern="^\d{3}\.\d{3}\.\d{3}\.\d{2}$" name="cpf" id="cpf" required>
-							</label>
-						  </td>
-						</tr>
-						
-						<tr>
-						 <td><strong>Telefone: </strong></td>
-						  <td>
-							<label><input type="tel" required>
-							</label>
-						  </td>
-						</tr>
-						
-						<div class="conteudo3">		 
-								<p><a href="#" target="_self"> Alterar Dados</a></p>
-							 </div>
-						
-					</table>
-					
-				</div>
+		<nav>
+			<ul class="menu">
+			<li class="active"><a href="./home-pag.html" class="menu-link">Home</a></li>
+			<li><a href="/site-sobre/sobre_nos.html" class="menu-link">Sobre</a></li>
+			<li><a href="/site-promo/promocoes.html" class="menu-link">Promoções</a></li>
+			<li><a href="/site-contato/contato.html" class="menu-link">Contato</a></li>
+			<li>
+				<a href="/site-cadastro de cliente/login.html" class="menu-link" id="menu-link-login">Login</a>|
+				<a href="/site-cadastro de cliente/cadastro.html" class="menu-link" id="menu-link-cadastro">Cadastre-se</a>
+			</li>
+			<li><a href="carrinho.html" class="menu-link"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+			<li><a href="area_cliente.html" class="menu-link"><i class="glyphicon glyphicon-user"></i></a></li>
 
-			</div>
-				
-				<hr >
-				
-				<div id="rodape">
-					<p><align="center"> Rodapé Dos Dados</p>
-				</div>
+			</ul>
+		</nav>
+	</header>
 		
+	<div class="esquerda"> 
+		
+		
+		<div class="menu-esquerda">  
+			<nav>
+				<h1> Minha Conta</h1>
+
+				<ul>
+					<li><img class="meio" src="icons/wallet.svg" width="35" height="35" alt="carteira" /><a href="pedidos.html" target="_self" >Pedidos</a></li>
+				</ul>
+				<ul>
+					<li><img class="meio" src="icons/box.svg" width="35" height="45" alt="caixa" /><a href="endereco.html" target="_self">Endere&ccedilo</a></li>
+				</ul>
+				<ul>
+					<li><img class="meio" src="icons/user.svg" width="35" height="35" alt="usuario" /><a href="dados.html" target="_self">Meus Dados</a></li>
+				</ul>
+				<ul>
+					<li><img class="meio" src="icons/clipboard.svg" width="35" height="35" alt="bloquinho"><a href="duvidas.html" target="_self">Duvidas</a></li>
+				</ul> 
+			</nav>
 		</div>
-	
 	</div>
+
+	<div  class="dados">
+	
+			<div class="menu-dados">
+			
+			<form class="form">
+				
+				<div class="inp">
+					<p><div id="nome">Nome e Sobrenome: nada</div></p>
+				</div>
+
+				<div class="inp">
+					<p><div id="nascimento">Nascimento: nada</div></p>
+				</div>
+
+				<div class="inp">
+					<p><div id="sexo">Sexo: nada</div></p>
+				</div>
+
+				<div class="inp">
+					<p><div id="email">Email: nada</div></p>
+				</div>
+
+				<div class="inp">
+					<p><div id="senha">Senha: nada</div></p>
+				</div>
+
+				<div class="inp">
+					<p><div id="cpf">Cpf: nada</div></p>
+				</div>
+
+				<div class="inp">
+					<p><div id="tel">Telefone: nada</div></p>
+				</div>
+
+				<!--<input type="submit" value="Alterar Dados">-->
+			
+			</form>
+			
+		</div>
+
+	</div>
+	
+	
 
 </body>
 

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+header {
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+
+/* header */
+
+.header 
+{
+    background-color: #4B0082;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.menu-link:hover {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    padding: 30px;
+    color: white;
+}
+
+#menu-link-login, 
+#menu-link-cadastro {
+    font-size: 1.1rem;
+    padding: 10px;
+}
+/* logo */
+
+#logo {
+    margin-left: 10%;
+    margin-bottom: 0;
+    margin-top: 0%;
+    width: 25%;
+}
+
+
+@media screen and (max-width: 50rem) {
+    .menu li a {
+        padding: 2px;
+        font-size: 60%;
+    }
+    
+    #menu-link-login, 
+    #menu-link-cadastro {
+        font-size: 55%;
+        padding: 2px;
+    }
+    
+    #logo {
+        margin-left: 5%;
+        margin-bottom: 0;
+        margin-top: 0%;
+        width: 40%;
+    }
+}
+
+.esquerda {
+    color: black;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.menu-esquerda nav ul, .menu-esquerda nav h1{
+    margin-bottom: 2%;
+}
+
+.menu-esquerda nav ul li a:hover {
+    color: #00FFFF;
+}
+
+.form {
+    color: black;
+    position: fixed;
+    float: right;
+    margin: 10%;
+    top: 5%;
+    left: 30%;
+    width: 30%;
+}
+
+.inp{
+    margin-bottom: 3%;
+}
