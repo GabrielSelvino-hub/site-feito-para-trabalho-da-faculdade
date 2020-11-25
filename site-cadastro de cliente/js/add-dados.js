@@ -8,7 +8,6 @@ function addItem() {
 
     // tem que fazer teste para seber se é male ou famele
     const male = document.getElementById("male").checked;
-    const female = document.getElementById("female").checked;
 
     var sexo = '';
 
