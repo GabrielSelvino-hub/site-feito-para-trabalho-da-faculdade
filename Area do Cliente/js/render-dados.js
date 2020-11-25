@@ -45,3 +45,6 @@ function renderItem() {
 }
 
 
+function sair() {
+    localStorage.clear();
+}
