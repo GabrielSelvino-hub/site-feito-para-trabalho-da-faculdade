@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<link rel="shortcut icon" href="/img/ico.png" />
+	<link rel="shortcut icon" href="img/ico.png" />
 </head>
 
 <body> 
@@ -15,7 +15,7 @@
 <div class="fontetexto">
 
 	<header class="header">
-		<a href="/site-home/index.html" id="logo"><img src="/img/logo.png" style="width: 55%"></a>
+		<a href="/site-home/index.html" id="logo"><img src="img/logo.png" style="width: 55%"></a>
 		
 		<nav>
 			<ul class="menu">
@@ -36,16 +36,16 @@
    
 	<div class="esquerda"> 
 
-  <h2 style="color: indigo;" align="center"> Minha Conta</h2>
+  
   
 	<div class="menu_esquerdo">
 	 
-			<nav>
+			<nav><h2> Minha Conta</h2>
 			<ul>
 			 <li><img class="meio" src="icons/wallet.svg" width="35" height="35" alt="carteira" /><a href="pedidos.html" target="_self" >Pedidos</a></li>
 			</ul>
 			<ul>
-			 <li><img class="meio" src="icons/box.svg" width="35" height="45" alt="caixa" /><a href="endereco.html" target="_self">Endere�o</a></li>
+			 <li><img class="meio" src="icons/box.svg" width="35" height="45" alt="caixa" /><a href="endereco.html" target="_self">Endereço</a></li>
 			</ul>
 			<ul>
 			 <li><img class="meio" src="icons/user.svg" width="35" height="35" alt="usuario" /><a href="dados.html" target="_self">Meus Dados</a></li>
@@ -60,22 +60,13 @@
 	
 	<div class="menudados" >
 			
-		<form class="form">
+		<form class="form2" style="position:absolute;width: 35%">
  
 			<form>
-  
-			   <p>
-				 <input type="search" name="pesquisar" style="width:350px;" required>
-				 <button style="width:auto;"> Pesquisar </button>
-			   </p>
-   
-			</form>
-  
-		</div>
-
-		<div class="conteudo2">
+					<div class="divform">	
+				<div class="conteudo2">
 			
-			<p> - Voc� n�o fez nenhum pedido</p>
+			<p> <strong> Você não fez nenhum pedido</strong></p>
 
 			<p>Consulte nossas ofertas:</p>
 
@@ -83,23 +74,41 @@
 
 		 <div class="conteudo3">
 				
-			  <a href="#" target="_blank">Loja</a>
+			  <a href="#" target="_blank">Loja</a><br>
 			 
-			  <a href="#" target="_blank">Promo��o</a>
+			  <a href="#" target="_blank">Promoção</a><br>
 			  
 			  <a href="#" target="_blank">Fale Conosco</a>
 		  
 		 </div>
+  
+			   <p>
+				 <input type="search" name="pesquisar" style="width:250px;" required>
+				 <button class="btnsub" style="	border:none; margin-left: 0px; width: auto" > Pesquisar </button>
+			   </p>
+   
+			</form>
+  
+		</div>
+
+		</div>
  
 	</div>
 
-	<hr >
+	<footer id="footer" >
+	<div class="divfooter">  			
+  			<br>
+  			<div class="divfoot" style="float: left;width: 50%;height: 20%;background-color:#4B0082;color:white">
+  			<p style="margin-left: 5%;"><img src="../img/logo.png" style="width: 20%"></p>
+  			<span style="margin-left: 5%;font-size: 10px">Todos os Direitos Reservados</span>
+  			</div>
 
-	<div id="rodape">
-
-		<p><align="center"> Rodap� dos Pedidos</p>
- 
+  			<div class="divfoot txtaling" style="float: right;width: 50%;background-color:#4B0082;height: 20%;color: white">
+  			<div style="width: 50%; height: 	100%; float: left;background-color:#4B0082;color: white"><p>Fale Conosco</p><a href="contatos.html" style="text-decoration: none;color: white">Contato</a></div><br><br>
+  			<br>
+  			</div>
 	</div>
+</footer>
 
 </body>
 

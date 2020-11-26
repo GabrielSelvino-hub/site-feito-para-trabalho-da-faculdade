@@ -6,15 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="css/dados.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="/img/ico.png" />
+    <link rel="shortcut icon" href="img/ico.png" />
 </head>
 
 <body> 
-
-	<div class="fontetexto">
 	
 		<header class="header">
-			<a href="/site-home/index.html" id="logo"><img src="/img/logo.png" style="width: 55%"></a>
+			<a href="/site-home/index.html" id="logo"><img src="img/logo.png"  style="width: 55%"></a>
 			
 			<nav>
 				<ul class="menu">
@@ -32,14 +30,17 @@
 			  </ul>
 			</nav>
 		</header>
-		
-		<div  class="dados">
 
-		   <h2 style="color: indigo;" align="center"> Minha Conta</h2>
+		<div class="esquerda"> 
+
 		   
-		 <div class="menu_esquerdo">  
-		 
-			<nav>
+		
+	  
+			<div class="menu-esquerda">  
+		
+		
+				
+			<nav><h2> Minha Conta</h2>
 				<ul>
 				 <li><img class="meio" src="icons/wallet.svg" width="35" height="35" alt="carteira" /><a href="pedidos.html" target="_self" >Pedidos</a></li>
 				</ul>
@@ -55,15 +56,20 @@
 			  </nav>
 		  
 		 </div>
-		 
-		 <div class="menudados" >
+		</div>
+
+	
+<div  class="dados">
+	
+			<div class="menudados" >
 			
-			<form class="form1">
-			
-			 <p>
-			  <label>
+			<form class="form3" style="position: absolute;margin-top: 5%; margin-left: -5%">
+				<div class="divform">
+
+<br>
+					 <label>
 			   <strong>Estado: </strong> 
-				<input list="estados" name="estado" style="width: 40px">
+				<input list="estados" name="estado" style="width: 60px">
 					<datalist id="estados">
 					  <option value="AC">
 					  <option value="AL">
@@ -94,51 +100,66 @@
 					  <option value="TO">
 					</datalist>
 			  </label>
-			 </p>
-			 
-			 <p>
-			  <label>
-			   <strong> Endere�o: </strong> 
-				<input type="text" name="endereco" style="width: 600px">
-			  </label>
-			 </p>
-			 
-			 <p>
-			  <label>
-			   <strong> Bairro: </strong> 
-				<input type="text" name="bairro"  style="width: 300px">
-			  </label>
-			 </p>
-			 
-			 <p>
-			  <label>
-			   <strong> Numero: </strong> 
-				<input type="text" name="numero" style="width: 80px">
-			  </label>
-			 </p>
-			 <p>
-			  <label>
-			   <strong> Complemento: </strong>  
-				<input type="text" name="complemento" style="width: 600px">
-			  </label>
-			 </p>
-			 
-			<br>
+				<div class="inp"  style="width: 90%">
+				<p>
+				<label>
+				<strong> Endereço: </strong> <br>
+				<input type="text" name="endereco"  style="width: 300px">
+			    </label>
+			    </p>
+				</div>
+
+				<div class="inp" style="width: 90%">
+				<p>
+				<label>
+			    <strong> Bairro: </strong> <br>
+				<input type="text" name="bairro" style="width: 300px">
+			    </label>
+			    </p>
+				</div>
+
+				<div class="inp" style="width: 90%">
+				<p>
+				<label>
+			    <strong> Numero: </strong> <br>
+				<input type="text" name="numero"style="width: 300px" >
+			    </label>
+			    </p>
+				</div>
+
+				<div class="inp" style="width: 90%">
+				<p>
+				<label>
+			    <strong> Complemento: </strong>  <br>
+				<input type="text" name="complemento" style="width: 300px">
+			    </label>
+			    </p>
+				</div>
+
+				
 			
+			</form>
+			</div>
+
+			<div class="conteudo3" style="	background-color: white;">	
+		
 		 </div>
-
-		 <div class="conteudo3">		 
-			<p><a href="#" target="_self"> Mudar Endere�o</a></p>
-		 </div>
-
-
-		<div id="rodape">
-			<p><align="center"> Rodap� do endere�o</p>
 		</div>
-	
-	</div>
-</div>
 
+</div>
+<div class="divfooter" style="margin-top: 17%;">  			
+  			<br>
+  			<div class="divfoot" style="float: left;width: 50%;height: 20%;background-color:#4B0082;color:white">
+  			<p style="margin-left: 5%;"><img src="../img/logo.png" style="width: 15%"></p>
+  			<span style="margin-left: 5%;font-size: 10px">Todos os Direitos Reservados</span>
+  			</div>
+
+  			<div class="divfoot txtaling" style="float: right;width: 50%;background-color:#4B0082;height: 20%;color: white">
+  			<div style="width: 50%; height: 98%; float: left;background-color:#4B0082;color: white"><p>Fale Conosco</p><a href="contatos.html" style="text-decoration: none;color: white">Contato</a></div><br><br><br>
+  			
+  			</div>
+	</div>
+</footer>
 </body>
 
 </html>

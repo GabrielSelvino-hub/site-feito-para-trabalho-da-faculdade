@@ -7,13 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="css/dados.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="/img/ico.png" />
+    <link rel="shortcut icon" href="img/ico.png" />
 
+	<script src="./js/render-dados.js"></script>
 </head>
 
-<body> 
+<body  onload="renderItem()">
+	
 	<header class="header">
-		<a href="/site-home/index.html" id="logo"><img src="/img/logo.png" style="width: 55%"></a>
+		<a href="/site-home/index.html" id="logo"><img src="img/logo.png" style="width: 55%"></a>
 		
 		<nav>
 			<ul class="menu">
@@ -28,69 +30,76 @@
 			<li><a href="#" class="menu-link"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
 			<li><a href="/Area do Cliente/dados.html" class="menu-link"><i class="glyphicon glyphicon-user"></i></a></li>
 
-		  </ul>
+			</ul>
 		</nav>
 	</header>
-			   
-	<div class="esquerda"> 
-			
-			  <h2 style="color: indigo;" align="center"> Minha Conta</h2>
-			    
-			 
-					
-			<div class="menu-esquerda">  
-				<nav>
-					<h1> Minha Conta</h1>
+		
 
-					<ul>
-						<li><img class="meio" src="icons/wallet.svg" width="35" height="35" alt="carteira" /><a href="pedidos.html" target="_self" >Pedidos</a></li>
-					</ul>
-					<ul>
-						<li><img class="meio" src="icons/box.svg" width="35" height="45" alt="caixa" /><a href="endereco.html" target="_self">Endere&ccedilo</a></li>
-					</ul>
-					<ul>
-						<li><img class="meio" src="icons/user.svg" width="35" height="35" alt="usuario" /><a href="dados.html" target="_self">Meus Dados</a></li>
-					</ul>
-					<ul>
-						<li><img class="meio" src="icons/clipboard.svg" width="35" height="35" alt="bloquinho"><a href="duvidas.html" target="_self">Duvidas</a></li>
-					</ul> 
-				</nav>
-			</div>
+	<div class="esquerda"> 
+		
+		
+		<div class="menu-esquerda">  
+			<nav>
+				<h1> Minha Conta</h1>
+
+				<ul>
+					<li><img class="meio" src="icons/wallet.svg" width="35" height="35" alt="carteira" /><a href="pedidos.html" target="_self" >Pedidos</a></li>
+				</ul>
+				<ul>
+					<li><img class="meio" src="icons/box.svg" width="35" height="45" alt="caixa" /><a href="endereco.html" target="_self">Endere&ccedilo</a></li>
+				</ul>
+				<ul>
+					<li><img class="meio" src="icons/user.svg" width="35" height="35" alt="usuario" /><a href="dados.html" target="_self">Meus Dados</a></li>
+				</ul>
+				<ul>
+					<li><img class="meio" src="icons/clipboard.svg" width="35" height="35" alt="bloquinho"><a href="duvidas.html" target="_self">Duvidas</a></li>
+				</ul> 
+			</nav>
 		</div>
-			 
-		<div  class="dados">
-			
+	</div>
+
+	<div  class="dados">
+	
 			<div class="menudados" >
-				<form class="form1">	
-					 <h2 style="color: indigo;" align="left"> D�vidas Frequentes</h2>
-					 
-					 <div style="margin-left: 20%;">
-					 
-					   <p>- Seu pedido ainda n�o chegou? </p>
-					   <p>- Cancelou seu pedido e n�o recebeu o reembolso? </p>
-					   <p>- Produto com defeito?</p>
-					   <p>- Algum problema para efetuar o pagamento?</p>
-					   <p>- Problema com sua conta?</p>
-					   
-					</div>   
-					
-					   <div class="conteudo3">		 
-							<p><a href="#" target="_self"> Fale Conosco e tire suas d�vidas! </a></p>
-					   </div>
-					</form>	   
+			
+			<form class="form">
+				<div class="divform">
+					<p style="color: indigo;" align="left"> <strong>Dúvidas Frequentes:</strong></p>
+				<div class="inp" >
+					   <p><strong>-</strong> Seu pedido ainda não chegou? </p>
+					   <p><strong>-</strong> Cancelou seu pedido e não recebeu o reembolso? </p>
+					   <p><strong>-</strong> Produto com defeito?</p>
+					   <p><strong>-</strong> Algum problema para efetuar o pagamento?</p>
+					   <p><strong>-</strong> Problema com sua conta?</p>
 				</div>
 
-
+				
+					   <div class="conteudo3">		 
+							<p><a href="#" target="_self"> Fale Conosco e tire suas dúvidas! </a></p>
+					   </div>
+			
+			</form>
 			</div>
-			
-			<hr >
-			
-			<div id="rodape">
-				 <p><align="center"> Rodap&eacute das duvidas</p>
-			</div>
-			
 		</div>
-		
+
 	</div>
+
+	<footer id="footer" >
+	<div class="divfooter">  			
+  			<br>
+  			<div class="divfoot" style="float: left;width: 50%;height: 20%;background-color:#4B0082;color:white">
+  			<p style="margin-left: 5%;"><img src="../img/logo.png" style="width: 20%"></p>
+  			<span style="margin-left: 5%;font-size: 10px">Todos os Direitos Reservados</span>
+  			</div>
+
+  			<div class="divfoot txtaling" style="float: right;width: 50%;background-color:#4B0082;height: 20%;color: white">
+  			<div style="width: 50%; height: 	100%; float: left;background-color:#4B0082;color: white"><p>Fale Conosco</p><a href="contatos.html" style="text-decoration: none;color: white">Contato</a></div><br><br>
+  			<br>
+  			</div>
+	</div>
+</footer>
+
+
 </body>
+
 </html>
