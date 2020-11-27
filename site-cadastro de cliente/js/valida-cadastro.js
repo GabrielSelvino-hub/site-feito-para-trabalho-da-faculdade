@@ -24,7 +24,8 @@ function validador() {
         alert("Muito obrigado por se cadastrar, aproveite nossas ofertas!");
         location.reload();
 	}else{
-		console.log("Não é possível cadastrar! Há campo(s) em branco, ou preenchido errado");
+        console.log("Não é possível cadastrar! Há campo(s) em branco, ou preenchido errado");
+        localStorage.clear();
 	}
 }
 
