@@ -281,16 +281,21 @@ h1 {
 /* FIM DA PAGINA */
 
 .fim-da-pag {
-  position: relative;
-  bottom: 0;
-  background-color: black;
-  color: #FFF;
-  width: 100%;
-  height: 10rem;   
-  line-height: 10rem; 
-  text-align: center;
-  margin-top: 5%;
-  top: 100px;
+	position: relative;
+	overflow: hidden;
+	bottom: 0;
+	background-color: indigo;
+	color: #FFF;
+	width: 100%;
+	height: 15rem;   
+	line-height: 10rem; 
+	text-align: center;
+	
+	font-size: 1.2rem;
+	font-family: Arial;
+
+	margin-top: 5%;
+	top: 100px;
 }
 
 /* CELULAR */
