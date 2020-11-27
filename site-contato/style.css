@@ -190,7 +190,7 @@ div {
 	background-color: indigo;
 	color: white;
 	width: 100%;
-	height: 10rem;   
+	height: 15rem;   
 	line-height: 10rem; 
 	text-align: center;
 	
@@ -198,6 +198,6 @@ div {
 	font-family: Arial;
 
 	margin-bottom: 0;
-	margin-top: 5%;
+	margin-top: 15%;
 	top: 100px;
 }
